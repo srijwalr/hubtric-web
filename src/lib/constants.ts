@@ -7,25 +7,36 @@ export const routes = {
   error: () => '*',
 };
 
-export const links = [
+export const about = [
   {
-    path: routes.home(),
-    title: 'Home',
+    title: 'Overview',
+    href: '/about#overview',
   },
   {
-    path: routes.aboutUs(),
-    title: 'About Us',
+    title: 'Mission and vision',
+    href: '/about#mission',
   },
   {
-    path: routes.capabilities(),
-    title: 'Capabilities',
+    title: 'Quality and commitment',
+    href: '/about#quality',
   },
   {
-    path: routes.industries(),
-    title: 'Industries',
+    title: 'Clientele and testimonials',
+    href: '/about#clientele',
+  },
+];
+
+export const capabilities = [
+  {
+    title: 'CNC Milling',
+    href: '/about#miling',
   },
   {
-    path: routes.contactUs(),
-    title: 'Contact Us',
+    title: 'CNC turning',
+    href: '/about#turning',
+  },
+  {
+    title: 'Injection molding',
+    href: '/about#molding',
   },
 ];
