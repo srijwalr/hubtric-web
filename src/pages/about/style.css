@@ -1,0 +1,21 @@
+.about {
+  background: url(../../assets//images//About.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.test-slide {
+  animation-duration: 3s;
+  animation-name: testSlide;
+}
+
+@keyframes testSlide {
+  from {
+    margin-left: 0%;
+    width: 50%;
+  }
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
