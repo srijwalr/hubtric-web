@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div>
       <section className='banner h-screen bg-cover object-cover text-white flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 p-4'>
-        <div className='text-4xl md:text-5xl lg:text-[60px] text-center lg:text-left'>
+        <div className='text-4xl md:text-5xl lg:text-[60px] text-center lg:text-left font-light'>
           <p>GET BACK TO BUSINESS</p>
-          <span className='font-extrabold'>
+          <span className='font-bold text-primary'>
             WITH OUR TOP-QUALITY
             <br /> MACHINE PARTS
           </span>
@@ -19,9 +19,13 @@ const Home = () => {
         <h1 className='text-4xl md:text-4xl lg:text-[50px] text-center font-semibold'>
           Our Partners
         </h1>
-        <div className='flex flex-wrap gap-4 items-center justify-center'>
+        <div className='flex flex-wrap gap-6 items-center justify-center'>
           {clients.map((client) => (
-            <img className='w-28' src={client.logo} alt={client.name} />
+            <img
+              className='w-28 hover:scale-110 transition-transform duration-300'
+              src={client.logo}
+              alt={client.name}
+            />
           ))}
         </div>
       </section>

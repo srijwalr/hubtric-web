@@ -79,7 +79,7 @@ const Navbar = () => {
         leaveTo='opacity-0 transform -translate-y-2'
       >
         <div className='md:hidden container'>
-          <div className='flex flex-col items-end gap-2 p-4 bg-white'>
+          <div className='flex flex-col items-end gap-2 p-4'>
             <CustomNavLink to={routes.home()}>Home</CustomNavLink>
             <CustomNavLink to={routes.aboutUs()}>About Us</CustomNavLink>
             <CustomNavLink to={routes.capabilities()}>
