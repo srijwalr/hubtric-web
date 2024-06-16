@@ -36,11 +36,11 @@ const Footer = () => {
             </div>
             <div className='flex items-center gap-4'>
               <Link
-                to='mailto:sales@hubtric.com'
+                to='mailto:info@hubtric.com'
                 className='text-primary flex items-center'
               >
                 <Mail className='me-2 h-4' />
-                sales@hubtric.com
+                info@hubtric.com
               </Link>
               <Link
                 to='mailto:sales@hubtric.com'
