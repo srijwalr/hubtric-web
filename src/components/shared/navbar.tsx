@@ -2,8 +2,8 @@ import Hubtric from '@/assets/icons/Hubtric.png';
 import { about, capabilities, routes } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { ChevronDown, MenuIcon, X } from 'lucide-react';
-import { AnchorHTMLAttributes, useState } from 'react';
-import { Link, NavLink, NavLinkProps } from 'react-router-dom';
+import { AnchorHTMLAttributes, useEffect, useState } from 'react';
+import { Link, NavLink, NavLinkProps, useLocation } from 'react-router-dom';
 import { Button, buttonVariants } from '../ui/button';
 import {
   HoverCard,
@@ -14,6 +14,12 @@ import { Transition } from '@headlessui/react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   return (
     <header className='bg-white sticky top-0 z-50 py-4 backdrop-blur supports-[backdrop-filter]:bg-white/80'>
