@@ -1,7 +1,6 @@
-import Overview from '@/assets/images/Overview.jpg';
-import MissionAndVision from '@/assets/images/MissionAndVision.jpg';
 import Journey from '@/assets/images/Journey.png';
-import Process from '@/assets/images/Process.png';
+import MissionAndVision from '@/assets/images/MissionAndVision.jpg';
+import Overview from '@/assets/images/Overview.jpg';
 import './style.css';
 
 const About = () => {
@@ -72,14 +71,6 @@ const About = () => {
               alt='Mission And Vision'
             />
           </div>
-        </div>
-        <div className='flex flex-col gap-4 items-center'>
-          <div>
-            <h2 className='text-2xl md:text-2xl lg:text-[40px] text-left font-semibold text-black'>
-              Our Process
-            </h2>
-          </div>
-          <img src={Process} alt='' className='w-full md:w-3/4' />
         </div>
       </section>
       <section></section>

@@ -1,10 +1,11 @@
-import Engine from '@/assets/images/Engine.png';
 import Capabilities from '@/assets/images/Capabilities.png';
+import Engine from '@/assets/images/Engine.png';
+import Process from '@/assets/images/Process.png';
+import { buttonVariants } from '@/components/ui/button';
 import { clients, routes } from '@/lib/constants';
-import './style.css';
 import { ChevronRight, PackageCheck, PackagePlus, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { buttonVariants } from '@/components/ui/button';
+import './style.css';
 
 const Home = () => {
   return (
@@ -56,12 +57,22 @@ const Home = () => {
           alt='Capabilities'
         />
         <Link
-          className={buttonVariants({ variant: 'default' })}
+          className={buttonVariants({ variant: 'ghost' })}
           to={routes.capabilities()}
         >
           View More
           <ChevronRight className='w-4 h-4 ms-2' />
         </Link>
+      </section>
+      <section className='container py-6'>
+        <div className='flex flex-col gap-4 items-center'>
+          <div>
+            <h2 className='text-2xl md:text-2xl lg:text-[40px] text-left font-semibold text-black'>
+              The Hubtric Process
+            </h2>
+          </div>
+          <img src={Process} alt='' className='w-full md:w-3/4' />
+        </div>
       </section>
       <section className='container py-6 flex flex-col gap-6 items-center'>
         <h1 className='text-3xl md:text-3xl lg:text-[40px] text-center font-semibold'>
@@ -70,7 +81,7 @@ const Home = () => {
         <div className='flex flex-wrap gap-6 items-center justify-center'>
           {clients.map((client) => (
             <img
-              className='w-28 hover:scale-110 transition-transform duration-300'
+              className='w-28 hover:scale-110 transition-transform duration-300 grayscale opacity-75'
               src={client.logo}
               alt={client.name}
             />
