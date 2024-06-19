@@ -1,6 +1,7 @@
 import Hubtric from '@/assets/icons/Hubtric.png';
-import { about, capabilities, routes } from '@/lib/constants';
+import { about, routes } from '@/lib/constants';
 import { cn } from '@/lib/utils';
+import { Transition } from '@headlessui/react';
 import { ChevronDown, MenuIcon, X } from 'lucide-react';
 import { AnchorHTMLAttributes, useEffect, useState } from 'react';
 import { Link, NavLink, NavLinkProps, useLocation } from 'react-router-dom';
@@ -10,7 +11,6 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from '../ui/hover-card';
-import { Transition } from '@headlessui/react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,20 +43,7 @@ const Navbar = () => {
               ))}
             </HoverCardContent>
           </HoverCard>
-          <HoverCard>
-            <HoverCardTrigger>
-              <CustomNavLink to={routes.capabilities()}>
-                Capabilities <ChevronDown className='ms-2 w-4' />
-              </CustomNavLink>
-            </HoverCardTrigger>
-            <HoverCardContent align='start'>
-              {capabilities.map((item) => (
-                <CustomAnchor key={item.href} href={item.href}>
-                  {item.title}
-                </CustomAnchor>
-              ))}
-            </HoverCardContent>
-          </HoverCard>
+          <CustomNavLink to={routes.capabilities()}>Capabilities</CustomNavLink>
           <CustomNavLink to={routes.industries()}>Industries</CustomNavLink>
         </div>
         <div className='flex items-center gap-3'>

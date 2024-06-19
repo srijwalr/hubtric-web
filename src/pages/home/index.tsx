@@ -1,7 +1,10 @@
 import Engine from '@/assets/images/Engine.png';
-import { clients } from '@/lib/constants';
+import Capabilities from '@/assets/images/Capabilities.png';
+import { clients, routes } from '@/lib/constants';
 import './style.css';
-import { PackageCheck, PackagePlus, Users } from 'lucide-react';
+import { ChevronRight, PackageCheck, PackagePlus, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { buttonVariants } from '@/components/ui/button';
 
 const Home = () => {
   return (
@@ -47,6 +50,20 @@ const Home = () => {
         </div>
       </section>
       <section className='container py-6 flex flex-col gap-6 items-center'>
+        <img
+          className='w-full md:w-3/4'
+          src={Capabilities}
+          alt='Capabilities'
+        />
+        <Link
+          className={buttonVariants({ variant: 'default' })}
+          to={routes.capabilities()}
+        >
+          View More
+          <ChevronRight className='w-4 h-4 ms-2' />
+        </Link>
+      </section>
+      <section className='container py-6 flex flex-col gap-6 items-center'>
         <h1 className='text-3xl md:text-3xl lg:text-[40px] text-center font-semibold'>
           Our Partners
         </h1>
@@ -60,7 +77,6 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <section></section>
     </div>
   );
 };
