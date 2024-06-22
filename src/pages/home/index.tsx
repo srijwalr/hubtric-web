@@ -1,6 +1,7 @@
-import Capabilities from '@/assets/images/Capabilities.png';
+// import Capabilities from '@/assets/images/Capabilities.png';
 import Engine from '@/assets/images/Engine.png';
 import Process from '@/assets/images/Process.png';
+import Capabilities from '@/components/shared/capabilities';
 import { buttonVariants } from '@/components/ui/button';
 import { clients, routes } from '@/lib/constants';
 import { ChevronRight, PackageCheck, PackagePlus, Users } from 'lucide-react';
@@ -51,11 +52,10 @@ const Home = () => {
         </div>
       </section>
       <section className='container py-6 flex flex-col gap-6 items-center'>
-        <img
-          className='w-full md:w-3/4'
-          src={Capabilities}
-          alt='Capabilities'
-        />
+        <h2 className='text-2xl md:text-2xl lg:text-[40px] text-left font-semibold text-black'>
+          Capabilities
+        </h2>
+        <Capabilities />
         <Link
           className={buttonVariants({ variant: 'ghost' })}
           to={routes.capabilities()}
