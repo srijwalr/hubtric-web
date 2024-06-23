@@ -1,18 +1,18 @@
 // import Capabilities from '@/assets/images/Capabilities.png';
 import Engine from '@/assets/images/Engine.png';
-import Process from '@/assets/images/Process.png';
 import Capabilities from '@/components/shared/capabilities';
 import { buttonVariants } from '@/components/ui/button';
 import { clients, routes } from '@/lib/constants';
 import { ChevronRight, PackageCheck, PackagePlus, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './style.css';
+import Process from '@/components/shared/process';
 
 const Home = () => {
   return (
     <div>
       <section className='banner h-screen bg-cover object-cover text-white flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 p-4'>
-        <div className='text-4xl md:text-5xl lg:text-[60px] text-center lg:text-left font-light'>
+        <div className='text-4xl md:text-5xl lg:text-[60px] text-center lg:text-left font-light animate-slide-in'>
           <p>GET BACK TO BUSINESS</p>
           <span className='font-bold text-primary'>
             WITH OUR TOP-QUALITY
@@ -64,14 +64,15 @@ const Home = () => {
           <ChevronRight className='w-4 h-4 ms-2' />
         </Link>
       </section>
-      <section className='container py-6'>
-        <div className='flex flex-col gap-4 items-center'>
-          <div>
-            <h2 className='text-2xl md:text-2xl lg:text-[40px] text-left font-semibold text-black'>
-              The Hubtric Process
-            </h2>
+      <section className='bg-secondary overflow-hidden'>
+        <div className='container py-6 gap-6 flex flex-col md:flex-row items-center justify-between'>
+          <div className='flex flex-col'>
+            <h1 className='text-3xl md:text-3xl lg:text-[40px] text-left font-semibold'>
+              Our Process
+            </h1>
+            <span className='font-semibold'>The Hubtric Way</span>
           </div>
-          <img src={Process} alt='' className='w-full md:w-3/4' />
+          <Process />
         </div>
       </section>
       <section className='container py-6 flex flex-col gap-6 items-center'>
@@ -81,7 +82,7 @@ const Home = () => {
         <div className='flex flex-wrap gap-6 items-center justify-center'>
           {clients.map((client) => (
             <img
-              className='w-28 hover:scale-110 transition-transform duration-300 grayscale opacity-75'
+              className='w-28 hover:scale-110 hover:grayscale-0 hover:opacity-100 transition-transform duration-300 grayscale opacity-75'
               src={client.logo}
               alt={client.name}
             />
