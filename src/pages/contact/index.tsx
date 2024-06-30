@@ -27,10 +27,10 @@ const Contact = () => {
                     <span>info@hubtric.com</span>
                   </div>
                 </Link>
-                <Link to='tel:+91-96116-75866' className='text-black flex'>
+                <Link to='tel:+91-7899176414' className='text-black flex'>
                   <div className='flex flex-col'>
                     <span className='font-semibold'>Phone</span>
-                    <span>+91 96116 75866</span>
+                    <span>+91 7899176414</span>
                   </div>
                 </Link>
               </div>
