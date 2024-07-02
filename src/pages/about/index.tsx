@@ -50,7 +50,7 @@ const About = () => {
           </h1>
         </div>
       </section>
-      <section className='flex flex-col grid-cols-4 md:grid'>
+      <section className='container flex flex-col grid-cols-4 md:grid'>
         <div className='container py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full'>
           <h2 className='text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary'>
             Overview
@@ -95,7 +95,7 @@ const About = () => {
           />
         </div>
       </section>
-      <section className='flex flex-col grid-cols-4 md:grid'>
+      <section className='container flex flex-col grid-cols-4 md:grid'>
         <div className='col-span-1'>
           <img
             className='w-full h-60 md:h-full object-cover'
@@ -139,14 +139,14 @@ const About = () => {
         </div>
       </section>
       <section>
-        <div className='py-6 flex flex-col gap-4 items-center'>
+        <div className='container py-6 flex flex-col gap-4 items-center'>
           <h2 className='text-2xl md:text-2xl lg:text-[40px] text-left font-semibold text-black'>
             Our Journey
           </h2>
           <img src={Journey} alt='Journey' className='w-full md:w-3/4' />
         </div>
       </section>
-      <section className='flex flex-col md:flex-row items-center'>
+      <section className='container flex flex-col md:flex-row items-center'>
         <div className='container py-6 flex items-start justify-center w-full md:w-1/4'>
           <h1 className='text-3xl md:text-4xl lg:text-[50px] text-left font-semibold text-black'>
             When to Use Hubtric?
