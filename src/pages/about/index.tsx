@@ -51,7 +51,7 @@ const About = () => {
         </div>
       </section>
       <section className='container flex flex-col grid-cols-4 md:grid'>
-        <div className='container py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full'>
+        <div className='py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4'>
           <h2 className='text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary'>
             Overview
           </h2>
@@ -73,7 +73,7 @@ const About = () => {
             alt='Overview'
           />
         </div>
-        <div className='container py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full'>
+        <div className='py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4'>
           <h2 className='text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary'>
             Mission and Vision
           </h2>
@@ -95,7 +95,7 @@ const About = () => {
           />
         </div>
       </section>
-      <section className='container flex flex-col grid-cols-4 md:grid'>
+      <section className='container flex flex-col-reverse grid-cols-4 md:grid'>
         <div className='col-span-1'>
           <img
             className='w-full h-60 md:h-full object-cover'
@@ -103,7 +103,7 @@ const About = () => {
             alt='Overview'
           />
         </div>
-        <div className='container py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full'>
+        <div className='py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4'>
           <h2 className='text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary'>
             Quality and Commitment
           </h2>
@@ -125,7 +125,7 @@ const About = () => {
             alt='Mission And Vision'
           />
         </div>
-        <div className='container py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full'>
+        <div className='py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4'>
           <h2 className='text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary'>
             Our Global Impact
           </h2>
