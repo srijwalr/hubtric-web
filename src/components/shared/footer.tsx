@@ -13,8 +13,13 @@ const Footer = () => {
               <span className='font-bold'>Tel.</span>
               <div className='flex flex-col'>
                 <Link to='tel:+91-7899176414'>+91 7899176414</Link>
-                <Link to='tel:+91-9901392219'>+91 9901392219</Link>
                 <Link to='tel:+49-15772902328'>+49 15772902328</Link>
+              </div>
+            </div>
+            <div className='flex items-start gap-1 text-primary'>
+              <span className='font-bold'>WA.</span>
+              <div className='flex flex-col'>
+                <Link to='https://wa.me/919901392219'>+91 9901392219</Link>
               </div>
             </div>
             <div className='flex items-start gap-1 text-primary'>
