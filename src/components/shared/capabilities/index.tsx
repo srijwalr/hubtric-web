@@ -41,6 +41,7 @@ const Capabilities = () => {
               <HexagonItem key={index} title={item.title} />
             ))}
           </div>
+          Hiiii
         </div>
       </div>
     </div>
