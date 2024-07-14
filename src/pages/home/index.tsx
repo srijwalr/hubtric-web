@@ -7,6 +7,7 @@ import { ChevronRight, PackageCheck, PackagePlus, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './style.css';
 import Process from '@/components/shared/process';
+import AnimatedCounter from '@/components/shared/animatedCounter/AnimatedCounter';
 
 const Home = () => {
   return (
@@ -26,25 +27,25 @@ const Home = () => {
           <h1 className='text-3xl md:text-4xl lg:text-[50px] text-center lg:text-left font-bold'>
             One Stop Manufacturing Shop
           </h1>
-          <div className='flex flex-col md:flex-row justify-center gap-8 items-center'>
-            <div className='flex gap-4'>
+          <div className='flex flex-col md:flex-row justify-center gap-16 items-center'>
+            <div className='flex gap-4 min-w-[220px]'>
               <PackagePlus className='w-12 h-12' />
               <div className='flex flex-col'>
-                <span className='text-4xl font-semibold'>2000+</span>
+                <span className='text-4xl font-semibold'><AnimatedCounter end={2000} />+</span>
                 <div className='text-xl font-medium'>Products</div>
               </div>
             </div>
-            <div className='flex gap-4'>
+            <div className='flex gap-4 min-w-[220px]'>
               <Users className='w-12 h-12' />
               <div className='flex flex-col'>
-                <span className='text-4xl font-semibold'>10000+</span>
+                <span className='text-4xl font-semibold'><AnimatedCounter end={10000} />+</span>
                 <span className='text-xl font-medium'>Customers</span>
               </div>
             </div>
-            <div className='flex gap-4'>
+            <div className='flex gap-4 min-w-[220px]'>
               <PackageCheck className='w-12 h-12' />
               <div className='flex flex-col'>
-                <span className='text-4xl font-semibold'>50000+</span>
+                <span className='text-4xl font-semibold'><AnimatedCounter end={50000} />+</span>
                 <span className='text-xl font-medium'>Delivered</span>
               </div>
             </div>

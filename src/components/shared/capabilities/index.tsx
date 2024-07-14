@@ -14,19 +14,19 @@ import { routes } from '@/lib/constants';
 // const image1 = 'https://www.istockphoto.com/vector/big-civil-aircraft-old-poster-gm1087285030-291711022'
 const Capabilities = () => {
   const items = [
-    { text: 'Sub Assemblies Customize Gauges', imageUrl: ImgSubAssembly },
-    { text: 'Aerospace Components & Press Toolings', imageUrl: ImgAdvancedTooling },
-    { text: 'Injection Molding & Press Toolings', imageUrl: ImgInjectionMolding },
-    { text: 'Precision Machining For All Grades', imageUrl: ImgPrecisionMachining },
+    { text: 'Precision CNC Machining', imageUrl: ImgPrecisionMachining },
+    { text: 'Advanced Tooling Solutions', imageUrl: ImgAdvancedTooling },
+    { text: 'Injection Molding', imageUrl: ImgInjectionMolding },
+    { text: 'Sub Assembly Services', imageUrl: ImgSubAssembly },
+    { text: 'Design & Prototyping', imageUrl: ImgDesignPrototyping },
     { text: 'Research & Development', imageUrl: ImgRD },
-    { text: 'Jigs & Fixtures', imageUrl: ImgAdvancedTooling },
-    { text: 'Design, Modeling, Reverse Engineering', imageUrl: ImgDesignPrototyping },
-    { text: 'Contract Services', imageUrl: ImgAdvancedTooling },
+    // { text: 'SecondaryOperations', imageUrl: '' },
+    // { text: 'Contract Services', imageUrl: '' },
   ];
-//http://localhost:5173/assets//images//GlobalImpact.jpg
+
   return (
     <div className="container mx-auto py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item, index) => (
           <Link to={routes.capabilities()} key={index}>
             <div
