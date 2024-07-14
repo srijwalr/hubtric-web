@@ -1,83 +1,47 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './style.css';
+import ImgSubAssembly from '../../../assets/images/SubAssembly.jpeg'
+// import ImgAeroSpace from '../../../assets/images/Aero'
+import ImgAdvancedTooling from '../../../assets/images/AdvancedTooling.jpeg'
+import ImgDesignPrototyping from '../../../assets/images/DesignPrototyping.jpeg'
+import ImgInjectionMolding from '../../../assets/images/InjectionMolding.jpeg'
+import ImgPrecisionMachining from '../../../assets/images/PrecisionMachining.jpeg'
+import ImgRD from '../../../assets/images/R&D.jpeg'
+import { Link } from 'react-router-dom';
 import { routes } from '@/lib/constants';
+// import ImgSubAssembly from '../../../assets/images/SubAssembly.jpeg'
 
-const data = [
-  {
-    title: 'Aerospace Components & Press Toolings',
-  },
-  {
-    title: 'Precision Machining For All Grades',
-  },
-  {
-    title: 'Sub Assemblies Customize Gauges',
-  },
-  {
-    title: 'Injection Molding & Press Toolings',
-  },
-  {
-    title: 'Design, Modeling, Reverse Engineering',
-  },
-  {
-    title: 'Research & Development',
-  },
-  {
-    title: 'Jigs & Fixtures',
-  },
-];
-
+// const image1 = 'https://www.istockphoto.com/vector/big-civil-aircraft-old-poster-gm1087285030-291711022'
 const Capabilities = () => {
+  const items = [
+    { text: 'Sub Assemblies Customize Gauges', imageUrl: ImgSubAssembly },
+    { text: 'Aerospace Components & Press Toolings', imageUrl: ImgAdvancedTooling },
+    { text: 'Injection Molding & Press Toolings', imageUrl: ImgInjectionMolding },
+    { text: 'Precision Machining For All Grades', imageUrl: ImgPrecisionMachining },
+    { text: 'Research & Development', imageUrl: ImgRD },
+    { text: 'Jigs & Fixtures', imageUrl: ImgAdvancedTooling },
+    { text: 'Design, Modeling, Reverse Engineering', imageUrl: ImgDesignPrototyping },
+    { text: 'Contract Services', imageUrl: ImgAdvancedTooling },
+  ];
+//http://localhost:5173/assets//images//GlobalImpact.jpg
   return (
-    <div className='p-6'>
-      <div className='container'>
-        <div className='flex flex-col items-center justify-center'>
-          <div className='flex justify-center gap-0 md:gap-1 flex-wrap'>
-            {data.slice(0, 4).map((item, index) => (
-              <HexagonItem key={index} title={item.title} />
-            ))}
-          </div>
-          <div className='flex justify-center gap-0 md:gap-1 flex-wrap'>
-            {data.slice(4).map((item, index) => (
-              <HexagonItem key={index} title={item.title} />
-            ))}
-          </div>
-          Hiiii
-        </div>
+    <div className="container mx-auto py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {items.map((item, index) => (
+          <Link to={routes.capabilities()} key={index}>
+            <div
+              className="relative w-full h-full overflow-hidden capabilitiesItem"
+              style={{ backgroundImage: `url(${item.imageUrl})` }}
+            >
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4">
+                <span className="text-white text-xl font-bold text-center">{item.text}</span>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
 };
-
-const HexagonItem = ({ title }: { title: string }) => (
-  <div className='hexagon-item'>
-    <div className='hex-item'>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div className='hex-item'>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <Link to={routes.capabilities()} className='hex-content'>
-      <span className='hex-content-inner'>
-        <span className='title text-primary-foreground'>{title}</span>
-      </span>
-      <svg
-        viewBox='0 0 173.20508075688772 200'
-        height='200'
-        width='174'
-        version='1.1'
-        xmlns='http://www.w3.org/2000/svg'
-      >
-        <path
-          d='M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z'
-          fill='#000000'
-        ></path>
-      </svg>
-    </Link>
-  </div>
-);
 
 export default Capabilities;

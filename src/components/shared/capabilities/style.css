@@ -1,12 +1,17 @@
-.hexagon-item {
-  cursor: pointer;
-  width: 200px;
-  margin: -10px;
-  position: relative;
-  transform: rotate(30deg);
+.capabilitiesItem {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 150px !important;
 }
 
-.hexagon-item:hover .hex-item div::before,
+.capabilitiesItem:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* .hexagon-item:hover .hex-item div::before,
 .hexagon-item:hover .hex-item div::after {
   background-color: hsl(var(--primary));
 }
@@ -163,4 +168,4 @@
   .page-home .hexagon-item:nth-last-child(3) {
     transform: rotate(30deg) translate(0px, 0px);
   }
-}
+} */

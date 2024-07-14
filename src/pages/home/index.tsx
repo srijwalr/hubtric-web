@@ -52,17 +52,17 @@ const Home = () => {
         </div>
       </section>
       <section className='container py-6 flex flex-col gap-6 items-center'>
-        <h2 className='text-2xl md:text-2xl lg:text-[40px] text-left font-semibold text-black'>
+        <h2 className='text-2xl md:text-[40px] lg:text-[40px] text-left font-semibold text-black'>
           Capabilities
         </h2>
         <Capabilities />
-        <Link
+        {/* <Link
           className={buttonVariants({ variant: 'ghost' })}
           to={routes.capabilities()}
         >
           View More
           <ChevronRight className='w-4 h-4 ms-2' />
-        </Link>
+        </Link> */}
       </section>
       <section className='bg-secondary overflow-hidden'>
         <div className='container py-6 gap-6 flex flex-col md:flex-row items-center justify-between'>

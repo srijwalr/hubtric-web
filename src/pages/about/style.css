@@ -1,12 +1,26 @@
 .about {
-  background: url(../../assets//images//About.jpg);
+  /* background: url(../../assets//images//About.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
+}
+.video-bg{
+  position: absolute;
+  top: 5.8rem;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1; /* Make sure the video is behind the text */
 }
 
 .test-slide {
   animation-duration: 3s;
   animation-name: testSlide;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes testSlide {
