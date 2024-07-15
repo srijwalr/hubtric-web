@@ -1,10 +1,8 @@
 // import Capabilities from '@/assets/images/Capabilities.png';
 import Engine from '@/assets/images/Engine.png';
 import Capabilities from '@/components/shared/capabilities';
-import { buttonVariants } from '@/components/ui/button';
-import { clients, routes } from '@/lib/constants';
-import { ChevronRight, PackageCheck, PackagePlus, Users } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { clients } from '@/lib/constants';
+import { PackageCheck, PackagePlus, Users } from 'lucide-react';
 import './style.css';
 import Process from '@/components/shared/process';
 import AnimatedCounter from '@/components/shared/animatedCounter/AnimatedCounter';

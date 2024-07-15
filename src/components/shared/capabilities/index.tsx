@@ -1,7 +1,5 @@
-import React from 'react';
 import './style.css';
 import ImgSubAssembly from '../../../assets/images/SubAssembly.jpeg'
-// import ImgAeroSpace from '../../../assets/images/Aero'
 import ImgAdvancedTooling from '../../../assets/images/AdvancedTooling.jpeg'
 import ImgDesignPrototyping from '../../../assets/images/DesignPrototyping.jpeg'
 import ImgInjectionMolding from '../../../assets/images/InjectionMolding.jpeg'
@@ -9,9 +7,7 @@ import ImgPrecisionMachining from '../../../assets/images/PrecisionMachining.jpe
 import ImgRD from '../../../assets/images/R&D.jpeg'
 import { Link } from 'react-router-dom';
 import { routes } from '@/lib/constants';
-// import ImgSubAssembly from '../../../assets/images/SubAssembly.jpeg'
 
-// const image1 = 'https://www.istockphoto.com/vector/big-civil-aircraft-old-poster-gm1087285030-291711022'
 const Capabilities = () => {
   const items = [
     { text: 'Precision CNC Machining', imageUrl: ImgPrecisionMachining },
