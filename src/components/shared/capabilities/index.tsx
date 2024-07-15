@@ -29,8 +29,8 @@ const Capabilities = () => {
               className="relative w-full h-full overflow-hidden capabilitiesItem"
               style={{ backgroundImage: `url(${item.imageUrl})` }}
             >
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4">
-                <span className="text-white text-xl font-bold text-center">{item.text}</span>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+                <span className="text-white text-4xl font-bold text-center">{item.text}</span>
               </div>
             </div>
           </Link>

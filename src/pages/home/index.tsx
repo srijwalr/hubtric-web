@@ -10,15 +10,15 @@ import AnimatedCounter from '@/components/shared/animatedCounter/AnimatedCounter
 const Home = () => {
   return (
     <div>
-      <section className='banner h-screen bg-cover object-cover text-white flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20 p-4'>
-        <div className='text-4xl md:text-5xl lg:text-[60px] text-center lg:text-left font-light animate-slide-in'>
+      <section className='banner h-screen xl:h-[75vh] bg-cover object-cover text-white flex flex-col lg:flex-row items-center justify-center lg:justify-around gap-10 lg:gap-20 p-4'>
+        <div className='text-4xl xl:text-5xl 2xl:text-7xl text-center lg:text-left font-light animate-slide-in'>
           <p>GET BACK TO BUSINESS</p>
           <span className='font-bold text-primary'>
             WITH OUR TOP-QUALITY
             <br /> MACHINE PARTS
           </span>
         </div>
-        <img className='spin w-40 md:w-60 lg:w-80' src={Engine} alt='Engine' />
+        <img className='spin w-40 md:w-60 lg:w-80 2xl:w-96' src={Engine} alt='Engine' />
       </section>
       <section className='py-6 bg-primary'>
         <div className='container flex flex-col gap-8 items-center'>
