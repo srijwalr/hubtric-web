@@ -2,7 +2,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 400px !important;
+  /* height: 400px !important; */
 }
 
 .capabilitiesItem:hover {

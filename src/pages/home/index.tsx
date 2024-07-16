@@ -6,6 +6,7 @@ import { PackageCheck, PackagePlus, Users } from 'lucide-react';
 import './style.css';
 import Process from '@/components/shared/process';
 import AnimatedCounter from '@/components/shared/animatedCounter/AnimatedCounter';
+import ImageGrid from './components/ImageGrid';
 
 const Home = () => {
   return (
@@ -78,7 +79,8 @@ const Home = () => {
         <h1 className='text-3xl md:text-3xl lg:text-[40px] text-center font-semibold'>
           Our Partners
         </h1>
-        <div className='flex flex-wrap gap-6 items-center justify-center'>
+        <ImageGrid images={clients} />
+        {/* <div className='flex flex-wrap gap-6 items-center justify-center'>
           {clients.map((client) => (
             <img
               className='w-28 hover:scale-110 hover:grayscale-0 hover:opacity-100 transition-transform duration-300 grayscale opacity-75'
@@ -86,7 +88,7 @@ const Home = () => {
               alt={client.name}
             />
           ))}
-        </div>
+        </div> */}
       </section>
     </div>
   );

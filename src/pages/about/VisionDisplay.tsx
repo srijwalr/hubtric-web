@@ -36,28 +36,28 @@ const VisionDisplay = () => {
       {data.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row w-full md:min-h-[350px]"
+            className="flex flex-col md:flex-row w-full md:min-h-72"
           >
             {index % 2 === 0 ? (
-              <>
+              <div className="flex flex-col md:flex-row md:max-h-80">
                 <div className="w-full md:w-1/2 flex justify-center items-center h-auto slide-in-left order-1">
-                  <img src={item.imageUrl} alt={`Image ${index}`} className="w-full h-full object-cover min-h-[190px]" />
+                  <img src={item.imageUrl} alt={`Image ${index}`} className="w-full h-full object-cover min-h-48" />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-6 pt-4 pb-10 md:pb-10 bg-secondary order-2">
                   <h2 className="text-lg 2xl:text-2xl font-semibold mb-2">{item.heading}</h2>
                   <p className="text-sm 2xl:text-xl">{item.content}</p>
                 </div>
-              </>
+              </div>
             ) : (
-              <>
+              <div className="flex flex-col md:flex-row md:max-h-80">
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-6 pt-4 pb-10 md:pb-10 bg-primary text-white order-2 md:order-1">
                   <h2 className="text-lg 2xl:text-2xl font-semibold mb-2">{item.heading}</h2>
                   <p className="text-sm 2xl:text-xl">{item.content}</p>
                 </div>
                 <div className="w-full md:w-1/2 flex justify-center items-center h-auto slide-in-right order-1 md:order-2">
-                  <img src={item.imageUrl} alt={`Image ${index}`} className="w-full h-full object-cover min-h-[190px]" />
+                  <img src={item.imageUrl} alt={`Image ${index}`} className="w-full h-full object-cover min-h-48" />
                 </div>
-              </>
+              </div>
             )}
           </div>
         )

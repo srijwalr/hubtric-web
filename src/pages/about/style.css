@@ -74,16 +74,3 @@ video {
 .slide-in-right {
   animation: slideInRight 2s ease-out forwards;
 }
-
-@keyframes resize {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
-  }
-}
-
-.resize {
-  animation: resize 2s infinite;
-}

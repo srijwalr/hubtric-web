@@ -57,7 +57,7 @@ const About = () => {
           Your browser does not support the video tag.
         </video>
         {/* </div> */}
-        <div className="container py-6">
+        <div className="container py-6 px-4">
           <h1 className="text-4xl md:text-5xl lg:text-[60px] text-left font-semibold text-black animate-slide-in">
             DESIGNING {/* DESIGNING <br />{' '} */}
             <span className="text-primary">MANUFACTURING</span>

@@ -2,9 +2,9 @@ import './style.css';
 
 const OurStory = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full bg-white text-secondary-foreground relative pl-6">
-      <div className="w-full md:w-1/2 p-4 pb-0 flex items-center justify-center">
-        <h2 className="text-3xl md:text-[40px] 2xl:text-[80px] font-bold mb-2 capitalize resize">
+    <div className="flex flex-col md:flex-row w-full bg-white text-secondary-foreground relative">
+      <div className="w-full md:w-1/2 p-4 pb-0 flex items-center justify-start md:justify-center">
+        <h2 className="text-3xl md:text-[40px] 2xl:text-[80px] font-bold mb-2 capitalize md:animate-bounce-in">
           Our story
         </h2>
       </div>

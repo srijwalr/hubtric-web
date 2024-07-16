@@ -21,16 +21,16 @@ const Capabilities = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 px-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {items.map((item, index) => (
           <Link to={routes.capabilities()} key={index}>
             <div
-              className="relative w-full h-full overflow-hidden capabilitiesItem"
+              className="relative w-full h-full overflow-hidden h-64 2xl:h-80 capabilitiesItem" // sm:h-64 xl:w-80 xl:h-80 
               style={{ backgroundImage: `url(${item.imageUrl})` }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-                <span className="text-white text-4xl font-bold text-center">{item.text}</span>
+                <span className="text-white text-2xl 2xl:text-3xl font-semibold text-center">{item.text}</span>
               </div>
             </div>
           </Link>

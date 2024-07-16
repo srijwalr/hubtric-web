@@ -27,13 +27,14 @@ const Navbar = () => {
           <CustomNavLink to={routes.aboutUs()}>About Us</CustomNavLink>
           <CustomNavLink to={routes.capabilities()}>Capabilities</CustomNavLink>
           <CustomNavLink to={routes.industries()}>Industries</CustomNavLink>
+          <CustomNavLink to={routes.contactUs()}>Contact Us</CustomNavLink>
         </div>
         <div className='flex items-center gap-3'>
           <Link
             className={buttonVariants({ variant: 'default' })}
             to={routes.contactUs()}
           >
-            Contact Us
+            Order Now
           </Link>
           <Button
             onClick={() => setIsOpen((prev) => !prev)}
