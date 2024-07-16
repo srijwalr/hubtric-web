@@ -26,7 +26,7 @@ const Capabilities = () => {
         {items.map((item, index) => (
           <Link to={routes.capabilities()} key={index}>
             <div
-              className="relative w-full h-full overflow-hidden xl:h-80 capabilitiesItem" // sm:h-64 xl:w-80 xl:h-80 
+              className="relative w-full h-64 xl:h-80 overflow-hidden capabilitiesItem" // sm:h-64 xl:w-80 xl:h-80 
               style={{ backgroundImage: `url(${item.imageUrl})` }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
