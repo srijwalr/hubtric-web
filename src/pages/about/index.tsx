@@ -2,38 +2,47 @@ import Journey from "@/assets/images/Journey.png";
 import "./style.css";
 import VisionDisplay from "./VisionDisplay";
 import OurStory from "./OurStory";
+import Precision from "@/assets/images/Precision.gif"
+import Prototyping from "@/assets/images/Prototyping.gif"
+import RnD from "@/assets/images/RnD.gif"
+import SecondaryOperations from "@/assets/images/SecondaryOperations.gif"
+import OurWork from "./OurWork";
 
 const whenToUse = [
   {
-    title: "Precision Manufacturing",
+    label: "Precision Manufacturing Excellence",
     description:
       "When you need high-precision aerospace, defense, and automotive components.",
+    image: Precision
   },
   {
-    title: "Reverse Engineering",
+    label: "Cutting-Edge Design and Prototyping",
     description:
       "For re-engineering parts to improve performance or reduce costs.",
+    image: Prototyping
   },
   {
-    title: "Tooling and Fixtures",
+    label: "Research and Development",
     description:
       "For custom-designed tooling and fixtures that enhance manufacturing efficiency.",
+    image: RnD
   },
   {
-    title: "Rapid Prototyping",
+    label: "Comprehensive Secondary Operations",
     description:
       "When quick turnaround times are essential for prototypes and small batch productions.",
+    image: SecondaryOperations
   },
-  {
-    title: "Quality Assurance",
-    description:
-      "For projects requiring stringent quality control and ISO-certified processes.",
-  },
-  {
-    title: "Global Delivery",
-    description:
-      "When you need reliable, on-time delivery and comprehensive order tracking from anywhere in the world.",
-  },
+  // {
+  //   title: "Quality Assurance",
+  //   description:
+  //     "For projects requiring stringent quality control and ISO-certified processes.",
+  // },
+  // {
+  //   title: "Global Delivery",
+  //   description:
+  //     "When you need reliable, on-time delivery and comprehensive order tracking from anywhere in the world.",
+  // },
 ];
 
 const About = () => {
@@ -57,7 +66,7 @@ const About = () => {
           Your browser does not support the video tag.
         </video>
         {/* </div> */}
-        <div className="container py-6 px-4">
+        <div className="container py-6">
           <h1 className="text-4xl md:text-5xl lg:text-[60px] text-left font-semibold text-black animate-slide-in">
             DESIGNING {/* DESIGNING <br />{' '} */}
             <span className="text-primary">MANUFACTURING</span>
@@ -81,7 +90,8 @@ const About = () => {
       </section>
 
       <VisionDisplay />
-      <section className="container flex flex-col md:flex-row items-center">
+      <OurWork inputData={whenToUse} />
+      {/* <section className="container flex flex-col md:flex-row items-center">
         <div className="container py-6 flex items-start justify-center w-full md:w-1/4">
           <h1 className="text-3xl md:text-4xl lg:text-[50px] text-left font-semibold text-black">
             When to Use Hubtric?
@@ -99,7 +109,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
