@@ -2,6 +2,7 @@ import MissionAndVision from "@/assets/images/MissionAndVision.jpg";
 import GlobalImpact from "@/assets/images/GlobalImpact.jpg";
 import Overview from "@/assets/images/Overview.jpg";
 import Quality from "@/assets/images/Quality.jpg";
+import './style.css'
 
 const data = [
   {

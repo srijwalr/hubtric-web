@@ -1,10 +1,10 @@
 import './style.css';
-import ImgSubAssembly from '../../../assets/images/SubAssembly.jpeg'
+import ImgSubAssembly from '../../../assets/images/SubAssembly.jpg'
 import ImgAdvancedTooling from '../../../assets/images/AdvancedTooling.jpeg'
-import ImgDesignPrototyping from '../../../assets/images/DesignPrototyping.jpeg'
+import ImgDesignPrototyping from '../../../assets/images/DesignPrototyping.jpg'
 import ImgInjectionMolding from '../../../assets/images/InjectionMolding.jpeg'
-import ImgPrecisionMachining from '../../../assets/images/PrecisionMachining.jpeg'
-import ImgRD from '../../../assets/images/R&D.jpeg'
+import ImgPrecisionMachining from '../../../assets/images/PrecisionMachining.jpg'
+import ImgRD from '../../../assets/images/R&D.jpg'
 import { Link } from 'react-router-dom';
 import { routes } from '@/lib/constants';
 

@@ -1,12 +1,16 @@
 import Journey from "@/assets/images/Journey.png";
 import "./style.css";
-import VisionDisplay from "./VisionDisplay";
-import OurStory from "./OurStory";
+import VisionDisplay from "./components/VisionDisplay";
+import OurStory from "./components/OurStory";
 import Precision from "@/assets/images/Precision.gif"
 import Prototyping from "@/assets/images/Prototyping.gif"
 import RnD from "@/assets/images/RnD.gif"
 import SecondaryOperations from "@/assets/images/SecondaryOperations.gif"
-import OurWork from "./OurWork";
+import OurWork from "./components/OurWork";
+import OurTeam from "./components/OurTeam";
+import ImgFounder from '@/assets/images/Founder.jpg';
+import ImgMD from '@/assets/images/ManagingDirector.jpg';
+
 
 const whenToUse = [
   {
@@ -43,6 +47,21 @@ const whenToUse = [
   //   description:
   //     "When you need reliable, on-time delivery and comprehensive order tracking from anywhere in the world.",
   // },
+];
+
+const teamData = [
+  {
+    name: 'Anoop Raj Rao',
+    designation: 'Co-founder, Germany',
+    imageUrl: ImgFounder, // Replace with actual image URL
+    fbUrl: '/',
+  },
+  {
+    name: 'Kusuma U Rao',
+    designation: 'Co-founder & Managing Director, India',
+    imageUrl: ImgMD, // Replace with actual image URL
+    fbUrl: '/',
+  },
 ];
 
 const About = () => {
@@ -91,6 +110,7 @@ const About = () => {
 
       <VisionDisplay />
       <OurWork inputData={whenToUse} />
+      <OurTeam teamMembers={teamData} />
       {/* <section className="container flex flex-col md:flex-row items-center">
         <div className="container py-6 flex items-start justify-center w-full md:w-1/4">
           <h1 className="text-3xl md:text-4xl lg:text-[50px] text-left font-semibold text-black">
