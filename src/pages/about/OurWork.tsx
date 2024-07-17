@@ -8,7 +8,7 @@ const InputBox = ({ label, image }: InputData) => {
   return (
     <div className="bg-white border border-gray-200 rounded p-4 flex flex-col items-center justify-center">
       <img src={image} alt={label} className="max-w-full max-h-[100px] object-cover" />
-      <p className="text-center font-medium mt-2 min-h-12">{label}</p>
+      <p className="text-center font-medium text-sm 2xl:text-xl mt-2 min-h-12">{label}</p>
     </div>
   );
 };
