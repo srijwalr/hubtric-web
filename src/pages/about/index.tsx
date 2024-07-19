@@ -2,40 +2,40 @@ import Journey from "@/assets/images/Journey.png";
 import "./style.css";
 import VisionDisplay from "./components/VisionDisplay";
 import OurStory from "./components/OurStory";
-import Precision from "@/assets/images/Precision.gif"
-import Prototyping from "@/assets/images/Prototyping.gif"
-import RnD from "@/assets/images/RnD.gif"
-import SecondaryOperations from "@/assets/images/SecondaryOperations.gif"
+import Precision from "@/assets/images/Precision.gif";
+import Prototyping from "@/assets/images/Prototyping.gif";
+import RnD from "@/assets/images/RnD.gif";
+import SecondaryOperations from "@/assets/images/SecondaryOperations.gif";
 import OurWork from "./components/OurWork";
 import OurTeam from "./components/OurTeam";
-import ImgFounder from '@/assets/images/Founder.jpg';
-import ImgMD from '@/assets/images/ManagingDirector.jpg';
-
+import ImgFounder from "@/assets/images/Founder.jpg";
+import ImgMD from "@/assets/images/ManagingDirector.jpg";
+import Certifications from "./components/Certifications";
 
 const whenToUse = [
   {
     label: "Precision Manufacturing Excellence",
     description:
       "When you need high-precision aerospace, defense, and automotive components.",
-    image: Precision
+    image: Precision,
   },
   {
     label: "Cutting-Edge Design and Prototyping",
     description:
       "For re-engineering parts to improve performance or reduce costs.",
-    image: Prototyping
+    image: Prototyping,
   },
   {
     label: "Research and Development",
     description:
       "For custom-designed tooling and fixtures that enhance manufacturing efficiency.",
-    image: RnD
+    image: RnD,
   },
   {
     label: "Comprehensive Secondary Operations",
     description:
       "When quick turnaround times are essential for prototypes and small batch productions.",
-    image: SecondaryOperations
+    image: SecondaryOperations,
   },
   // {
   //   title: "Quality Assurance",
@@ -51,16 +51,16 @@ const whenToUse = [
 
 const teamData = [
   {
-    name: 'Anoop Raj Rao',
-    designation: 'Co-founder, Germany',
+    name: "Anoop Raj Rao",
+    designation: "Co-founder, Germany",
     imageUrl: ImgFounder, // Replace with actual image URL
-    fbUrl: '/',
+    fbUrl: "/",
   },
   {
-    name: 'Kusuma U Rao',
-    designation: 'Co-founder & Managing Director, India',
+    name: "Kusuma U Rao",
+    designation: "Co-founder & Managing Director, India",
     imageUrl: ImgMD, // Replace with actual image URL
-    fbUrl: '/',
+    fbUrl: "/",
   },
 ];
 
@@ -111,6 +111,8 @@ const About = () => {
       <VisionDisplay />
       <OurWork inputData={whenToUse} />
       <OurTeam teamMembers={teamData} />
+
+      <Certifications />
       {/* <section className="container flex flex-col md:flex-row items-center">
         <div className="container py-6 flex items-start justify-center w-full md:w-1/4">
           <h1 className="text-3xl md:text-4xl lg:text-[50px] text-left font-semibold text-black">
