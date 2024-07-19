@@ -11,6 +11,7 @@ import OurTeam from "./components/OurTeam";
 import ImgFounder from "@/assets/images/Founder.jpg";
 import ImgMD from "@/assets/images/ManagingDirector.jpg";
 import Certifications from "./components/Certifications";
+import ContactUs from "./components/ContactUs";
 
 const whenToUse = [
   {
@@ -113,6 +114,7 @@ const About = () => {
       <OurTeam teamMembers={teamData} />
 
       <Certifications />
+      <ContactUs />
       {/* <section className="container flex flex-col md:flex-row items-center">
         <div className="container py-6 flex items-start justify-center w-full md:w-1/4">
           <h1 className="text-3xl md:text-4xl lg:text-[50px] text-left font-semibold text-black">

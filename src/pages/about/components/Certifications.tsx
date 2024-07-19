@@ -2,7 +2,7 @@ import ISO from "@/assets/images/ISO.png";
 
 const Certifications = () => {
     return (
-        <section className="certification bg-secondary text-secondary-foreground py-12 px-10 md:px-20 lg:px-40">
+        <section className="certifications bg-secondary text-secondary-foreground py-12 px-10 md:px-20 lg:px-40">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-5">Certifications</h2>
           <p className=" text-sm 2xl:text-xl leading-loose">
