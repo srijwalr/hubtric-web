@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
+  // faFacebookF,
+  // faTwitter,
+  // faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 

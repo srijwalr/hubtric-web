@@ -1,4 +1,3 @@
-import Journey from "@/assets/images/Journey.png";
 import "./style.css";
 import VisionDisplay from "./components/VisionDisplay";
 import OurStory from "./components/OurStory";

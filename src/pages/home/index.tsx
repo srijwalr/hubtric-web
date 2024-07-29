@@ -8,7 +8,6 @@ import Process from '@/components/shared/process';
 import AnimatedCounter from '@/components/shared/animatedCounter/AnimatedCounter';
 import ImageGrid from './components/ImageGrid';
 import ContactUs from './components/ContactUs';
-import ImgCard from '@/components/shared/ImgCard';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
