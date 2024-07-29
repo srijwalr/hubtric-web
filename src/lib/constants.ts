@@ -94,12 +94,12 @@ export const clients = [
     logo: Mamatha,
   },
   {
-    name: 'MagodLaser',
-    logo: Magod,
-  },
-  {
     name: 'HAPL',
     logo: HAPL,
+  },
+  {
+    name: 'MagodLaser',
+    logo: Magod,
   },
   {
     name: 'AEROSKY',

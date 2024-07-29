@@ -11,7 +11,6 @@ import OurTeam from "./components/OurTeam";
 import ImgFounder from "@/assets/images/Founder.jpg";
 import ImgMD from "@/assets/images/ManagingDirector.jpg";
 import Certifications from "./components/Certifications";
-import ContactUs from "./components/ContactUs";
 
 const whenToUse = [
   {
@@ -54,14 +53,16 @@ const teamData = [
   {
     name: "Anoop Raj Rao",
     designation: "Co-founder, Germany",
+    country: 'Germany',
     imageUrl: ImgFounder, // Replace with actual image URL
-    fbUrl: "/",
+    fbUrl: "https://www.linkedin.com/in/anooprajrao/",
   },
   {
     name: "Kusuma U Rao",
     designation: "Co-founder & Managing Director, India",
+    country: 'India',
     imageUrl: ImgMD, // Replace with actual image URL
-    fbUrl: "/",
+    fbUrl: "https://www.linkedin.com/in/kusuma-u/",
   },
 ];
 
@@ -100,21 +101,20 @@ const About = () => {
 
       <OurStory />
 
-      <section>
+      {/* <section>
         <div className="container py-6 flex flex-col gap-4 items-center">
           <h2 className="text-2xl md:text-2xl lg:text-[40px] text-left font-semibold text-black">
             Our Journey
           </h2>
           <img src={Journey} alt="Journey" className="w-full md:w-3/4" />
         </div>
-      </section>
+      </section> */}
 
       <VisionDisplay />
       <OurWork inputData={whenToUse} />
       <OurTeam teamMembers={teamData} />
 
       <Certifications />
-      <ContactUs />
       {/* <section className="container flex flex-col md:flex-row items-center">
         <div className="container py-6 flex items-start justify-center w-full md:w-1/4">
           <h1 className="text-3xl md:text-4xl lg:text-[50px] text-left font-semibold text-black">

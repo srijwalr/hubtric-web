@@ -8,7 +8,7 @@ const OurStory = () => {
           Our story
         </h2>
       </div>
-      <div className="w-full md:w-1/2 px-6 py-4 text-sm 2xl:text-xl leading-relaxed">
+      <div className="w-full md:w-1/2 px-6 py-4 text-sm 2xl:text-md leading-relaxed">
         <p>
           Hubtric Manufacturing Pvt. Ltd., established in 2018, has been at the
           forefront of revolutionizing the manufacturing industry with its
@@ -16,15 +16,15 @@ const OurStory = () => {
           Our company is dedicated to advancing traditional manufacturing
           processes by utilizing advanced machinery, elevating industries one
           step ahead. Guided by founding and strategic advisors based in Germany
-          and Switzerland, we bring global expertise to our operations. Our
-          specializations include CNC machining, injection molding, sheet metal
+          and Switzerland, we bring global expertise to our operations. 
+          <br/><br/>Our specializations include CNC machining, injection molding, sheet metal
           fabrication, 3D printing, tooling, fixtures, and sub-assemblies. These
           extensive manufacturing capabilities cover a wide spectrum of
           industries and applications, including aerospace, defense, automobile,
           healthcare, petrochemical, and fertilizer sectors. Hubtric's strength
           lies in our robust manufacturing capabilities. Equipped with the
           latest technology and advanced equipment, we ensure exceptional
-          precision and efficiency in every product we create. We pride
+          precision and efficiency in every product we create. <br/><br/>We pride
           ourselves on being a comprehensive one-stop solution for manufacturing
           needs. Whether it’s prototyping, low-volume production, or high-volume
           manufacturing, we offer an extensive range of services that cater to

@@ -52,7 +52,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-secondary text-white py-6 px-4">
-      <div className="flex flex-wrap flex-col md:flex-row justify-even text-xs text-secondary-foreground font-medium gap-8">
+      <div className="flex flex-wrap flex-col md:flex-row justify-even text-sm text-secondary-foreground font-medium gap-8">
         <div className="flex-1">
           <img className="w-24" src={Hubtric} alt="" />
         </div>

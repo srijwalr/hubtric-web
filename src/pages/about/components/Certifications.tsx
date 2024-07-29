@@ -6,7 +6,7 @@ const Certifications = () => {
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-5">Certifications</h2>
           <p className=" text-sm 2xl:text-xl leading-loose">
-            We are officially certified according to ISO-9001 standards. This
+            We are officially certified according to <b>ISO 27001, ISO 45001, ISO 14001, ISO 9001</b> standards. This
             rigorous process demonstrates our commitment to delivering the
             highest quality products and services to our customers. By adhering
             to ISO guidelines, we ensure consistent performance, efficiency, and
