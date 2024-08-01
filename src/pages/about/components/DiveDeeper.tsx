@@ -23,7 +23,7 @@ const data = [
 const DiveDeeper = () => {
   return (
     <div className='bg-black px-4 py-6 text-white flex flex-col gap-8 items-center'>
-      <h1 className='text-4xl font-semibold'>Dive Deeper</h1>
+      <h1 className='text-4xl font-semibold'>Talk to Us</h1>
       <div className='flex gap-6 justify-between flex-col md:flex-row'>
         {data.map((item) => (
           <Link

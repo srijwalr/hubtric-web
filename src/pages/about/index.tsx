@@ -113,8 +113,8 @@ const About = () => {
       </section> */}
 
       <VisionDisplay />
-      <OurWork inputData={whenToUse} />
       <OurTeam teamMembers={teamData} />
+      <OurWork inputData={whenToUse} />
       <Benefits />
       <WhenToUse />
       <Certifications />
