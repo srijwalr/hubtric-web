@@ -1,6 +1,7 @@
 // import Capabilities from '@/assets/images/Capabilities.png';
 import Engine from '@/assets/images/Engine.png';
 import Capabilities from '@/components/shared/capabilities';
+import Industries from '@/components/shared/industries';
 import { clients, routes } from '@/lib/constants';
 import { PackageCheck, PackagePlus, Users } from 'lucide-react';
 import './style.css';
@@ -15,9 +16,9 @@ const Home = () => {
     <div>
       <section className='banner h-screen md:h-[50vh] xl:h-[75vh] bg-cover object-cover text-white flex flex-col lg:flex-row items-center justify-center lg:justify-around gap-10 lg:gap-20 p-4'>
         <div className='text-4xl xl:text-5xl 2xl:text-7xl text-left font-light animate-slide-in order-2 lg:order-1'>
-          <p>GET BACK TO BUSINESS</p>
+          <p>ONE STEP AHEAD</p>
           <span className='font-bold text-primary'>
-            Transforming Industries<br/> with Our Precision Parts
+            TRANSFORMING INDUSTRIES<br/> WITH OUR PRECISION PARTS
             {/* <br /> MACHINE PARTS */}
           </span>
           <br />
@@ -82,6 +83,19 @@ const Home = () => {
           </div>
           <Process />
         </div>
+      </section>
+      <section className='w-full py-6 flex flex-col gap-6 items-center bg-secondary'>
+        <h2 className='text-2xl md:text-[40px] lg:text-[40px] text-left font-semibold text-black'>
+          Industries We Serve
+        </h2>
+        <Industries />
+        {/* <Link
+          className={buttonVariants({ variant: 'ghost' })}
+          to={routes.capabilities()}
+        >
+          View More
+          <ChevronRight className='w-4 h-4 ms-2' />
+        </Link> */}
       </section>
       <ContactUs />
       <section className='container py-6 flex flex-col gap-6 items-center'>
