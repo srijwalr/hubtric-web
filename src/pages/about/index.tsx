@@ -12,6 +12,7 @@ import ImgMD from '@/assets/images/ManagingDirector.jpg';
 import Certifications from './components/Certifications';
 import WhenToUse from './components/WhenToUse';
 import DiveDeeper from './components/DiveDeeper';
+import Benefits from './components/Benefits';
 
 const whenToUse = [
   {
@@ -113,8 +114,9 @@ const About = () => {
 
       <VisionDisplay />
       <OurWork inputData={whenToUse} />
-      <WhenToUse />
       <OurTeam teamMembers={teamData} />
+      <Benefits />
+      <WhenToUse />
       <Certifications />
       <DiveDeeper />
       {/* <section className="container flex flex-col md:flex-row items-center">
