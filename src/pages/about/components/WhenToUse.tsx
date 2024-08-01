@@ -51,7 +51,7 @@ const WhenToUse = () => {
           solutions
         </span>
       </div>
-      <div className='flex gap-4 flex-col md:flex-row'>
+      <div className='flex flex-col md:flex-row'>
         {data.map((item, index) => (
           <div
             className={`p-4 flex flex-col gap-2 w-full ${
@@ -61,7 +61,7 @@ const WhenToUse = () => {
             }`}
             key={index}
           >
-            <h1 className='text-4xl font-bold'>{item.title}</h1>
+            <h1 className='text-xl font-bold'>{item.title}</h1>
             <ul className='custom-bullet px-4 text-sm'>
               {item.points.map((value, idx) => (
                 <li key={idx}>{value}</li>
