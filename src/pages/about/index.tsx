@@ -82,7 +82,7 @@ const About = () => {
         >
           <source
             src={
-              'https://media.istockphoto.com/id/2153338836/video/fighter-aircraft-on-an-aircraft-carrier.mp4?s=mp4-640x640-is&k=20&c=h6e2DN0r1v5GE0ajJ3vlnkQ3FzSs2gI7Q-I989xqXDE='
+              'https://res.cloudinary.com/dsrflnll5/video/upload/v1722541669/szwp8kmudd0mlcc57s13.mp4'
             }
             type='video/mp4'
           />
