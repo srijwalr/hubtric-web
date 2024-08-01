@@ -1,39 +1,42 @@
-import "./style.css";
-import VisionDisplay from "./components/VisionDisplay";
-import OurStory from "./components/OurStory";
-import Precision from "@/assets/images/Precision.gif";
-import Prototyping from "@/assets/images/Prototyping.gif";
-import RnD from "@/assets/images/RnD.gif";
-import SecondaryOperations from "@/assets/images/SecondaryOperations.gif";
-import OurWork from "./components/OurWork";
-import OurTeam from "./components/OurTeam";
-import ImgFounder from "@/assets/images/Founder.jpg";
-import ImgMD from "@/assets/images/ManagingDirector.jpg";
-import Certifications from "./components/Certifications";
+import './style.css';
+import VisionDisplay from './components/VisionDisplay';
+import OurStory from './components/OurStory';
+import Precision from '@/assets/images/Precision.gif';
+import Prototyping from '@/assets/images/Prototyping.gif';
+import RnD from '@/assets/images/RnD.gif';
+import SecondaryOperations from '@/assets/images/SecondaryOperations.gif';
+import OurWork from './components/OurWork';
+import OurTeam from './components/OurTeam';
+import ImgFounder from '@/assets/images/Founder.jpg';
+import ImgMD from '@/assets/images/ManagingDirector.jpg';
+import Certifications from './components/Certifications';
+import WhenToUse from './components/WhenToUse';
+import DiveDeeper from './components/DiveDeeper';
+import Benefits from './components/Benefits';
 
 const whenToUse = [
   {
-    label: "Precision Manufacturing Excellence",
+    label: 'Precision Manufacturing Excellence',
     description:
-      "When you need high-precision aerospace, defense, and automotive components.",
+      'When you need high-precision aerospace, defense, and automotive components.',
     image: Precision,
   },
   {
-    label: "Cutting-Edge Design and Prototyping",
+    label: 'Cutting-Edge Design and Prototyping',
     description:
-      "For re-engineering parts to improve performance or reduce costs.",
+      'For re-engineering parts to improve performance or reduce costs.',
     image: Prototyping,
   },
   {
-    label: "Research and Development",
+    label: 'Research and Development',
     description:
-      "For custom-designed tooling and fixtures that enhance manufacturing efficiency.",
+      'For custom-designed tooling and fixtures that enhance manufacturing efficiency.',
     image: RnD,
   },
   {
-    label: "Comprehensive Secondary Operations",
+    label: 'Comprehensive Secondary Operations',
     description:
-      "When quick turnaround times are essential for prototypes and small batch productions.",
+      'When quick turnaround times are essential for prototypes and small batch productions.',
     image: SecondaryOperations,
   },
   // {
@@ -50,49 +53,49 @@ const whenToUse = [
 
 const teamData = [
   {
-    name: "Anoop Raj Rao",
-    designation: "Co-founder, Germany",
+    name: 'Anoop Raj Rao',
+    designation: 'Co-founder, Germany',
     country: 'Germany',
     imageUrl: ImgFounder, // Replace with actual image URL
-    fbUrl: "https://www.linkedin.com/in/anooprajrao/",
+    fbUrl: 'https://www.linkedin.com/in/anooprajrao/',
   },
   {
-    name: "Kusuma U Rao",
-    designation: "Co-founder & Managing Director, India",
+    name: 'Kusuma U Rao',
+    designation: 'Co-founder & Managing Director, India',
     country: 'India',
     imageUrl: ImgMD, // Replace with actual image URL
-    fbUrl: "https://www.linkedin.com/in/kusuma-u/",
+    fbUrl: 'https://www.linkedin.com/in/kusuma-u/',
   },
 ];
 
 const About = () => {
   return (
-    <div className="flex flex-col">
-      <section className="sm:h-40 md:h-80 xl:h-96 relative">
+    <div className='flex flex-col'>
+      <section className='sm:h-40 md:h-80 xl:h-96 relative'>
         {/* <div className="video-bg sm:h-40 md:h-80 top-0 md:top-24"> */}
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="video-bg sm:h-40 md:h-80 xl:h-96 object-cover"
+          className='video-bg sm:h-40 md:h-80 xl:h-96 object-cover'
         >
           <source
             src={
-              "https://media.istockphoto.com/id/2153338836/video/fighter-aircraft-on-an-aircraft-carrier.mp4?s=mp4-640x640-is&k=20&c=h6e2DN0r1v5GE0ajJ3vlnkQ3FzSs2gI7Q-I989xqXDE="
+              'https://media.istockphoto.com/id/2153338836/video/fighter-aircraft-on-an-aircraft-carrier.mp4?s=mp4-640x640-is&k=20&c=h6e2DN0r1v5GE0ajJ3vlnkQ3FzSs2gI7Q-I989xqXDE='
             }
-            type="video/mp4"
+            type='video/mp4'
           />
           Your browser does not support the video tag.
         </video>
         {/* </div> */}
-        <div className="container py-6">
-          <h1 className="text-4xl md:text-5xl lg:text-[60px] text-left font-semibold text-black animate-slide-in">
+        <div className='container py-6'>
+          <h1 className='text-4xl md:text-5xl lg:text-[60px] text-left font-semibold text-black animate-slide-in'>
             DESIGNING {/* DESIGNING <br />{' '} */}
-            <span className="text-primary">MANUFACTURING</span>
+            <span className='text-primary'>MANUFACTURING</span>
             <br />
-            <span className="text-primary">REVERSE </span>
-            <span className="text-black">ENGINEERING</span>
+            <span className='text-primary'>REVERSE </span>
+            <span className='text-black'>ENGINEERING</span>
           </h1>
         </div>
       </section>
@@ -112,8 +115,10 @@ const About = () => {
       <VisionDisplay />
       <OurWork inputData={whenToUse} />
       <OurTeam teamMembers={teamData} />
-
+      <Benefits />
+      <WhenToUse />
       <Certifications />
+      <DiveDeeper />
       {/* <section className="container flex flex-col md:flex-row items-center">
         <div className="container py-6 flex items-start justify-center w-full md:w-1/4">
           <h1 className="text-3xl md:text-4xl lg:text-[50px] text-left font-semibold text-black">

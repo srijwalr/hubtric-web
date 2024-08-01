@@ -39,7 +39,7 @@ const steps = [
 const Process = () => {
   return (
     <div className='flex justify-center items-center px-20 mx-auto'>
-      <div className='flex flex-col md:flex-row gap-6'>
+      <div className='flex flex-col md:flex-row'>
         {steps.map((step, index) => (
           <div
             key={step.id}

@@ -1,43 +1,49 @@
-
-
 @keyframes testSlide {
-    from {
-      margin-left: 0%;
-      width: 50%;
-    }
-    to {
-      margin-left: 100%;
-      width: 100%;
-    }
+  from {
+    margin-left: 0%;
+    width: 50%;
   }
-  
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    margin-left: 100%;
+    width: 100%;
   }
-  
-  @keyframes slideInRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  .slide-in-left {
-    animation: slideInLeft 2s ease-out forwards;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  .slide-in-right {
-    animation: slideInRight 2s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 2s ease-out forwards;
+}
+
+ul.custom-bullet {
+  list-style-type: '◎';
+}
+
+ul.custom-bullet li {
+  position: relative;
+  padding-left: 0.5rem;
+}
