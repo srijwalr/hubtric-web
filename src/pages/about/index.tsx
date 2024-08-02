@@ -177,12 +177,12 @@ const About = () => {
           playsInline
           className='video-bg sm:h-40 md:h-80 xl:h-96 object-cover'
         >
-        <source
-          src={
-            AbtVideo
-          }
-          type='video/mp4'
-        />
+          <source
+            src={
+              'https://res.cloudinary.com/dsrflnll5/video/upload/v1722541669/szwp8kmudd0mlcc57s13.mp4'
+            }
+            type='video/mp4'
+          />
           Your browser does not support the video tag.
         </video>
         {/* </div> */}

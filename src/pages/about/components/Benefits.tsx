@@ -1,4 +1,6 @@
-import { Globe, Newspaper, Ticket,Timer, ShieldCheck, Vegan } from 'lucide-react';
+import { Globe, ShieldCheck, TimerReset, Vegan } from 'lucide-react';
+import ISO from '@/assets/icons/iso.svg?react';
+import DFM from '@/assets/icons/dfm2.svg?react';
 
 const data = [
   {
@@ -23,19 +25,19 @@ const data = [
     title: 'ISO Compliance Guaranteed',
     description:
       'Our ISO 27001, ISO 45001, ISO 14001, and ISO 9001 certifications reflect our commitment to the highest standards of quality, security, safety, and environmental care.',
-    icon: <Newspaper strokeWidth={0.5} className='w-20 h-20' />,
+    icon: <ISO strokeWidth={0.5} className='w-20 h-20' />,
   },
   {
     title: 'Integrated DFM Analysis',
     description:
       'Our Design for Manufacturing (DFM) analysis ensures your designs are optimized for manufacturability, reducing production costs and time.',
-    icon: <Ticket strokeWidth={0.5} className='w-20 h-20' />,
+    icon: <DFM strokeWidth={0.5} className='w-20 h-20' />,
   },
   {
     title: 'Rapid Turnaround Times',
     description:
       'Efficient project management and advanced manufacturing processes ensure quick turnaround without compromising quality.',
-    icon: <Timer strokeWidth={0.5} className='w-20 h-20' />,
+    icon: <TimerReset strokeWidth={0.5} className='w-20 h-20' />,
   },
 ];
 
