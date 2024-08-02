@@ -3,7 +3,7 @@ import './style.css';
 // import OurStory from './components/OurStory';
 import Precision from '@/assets/images/Precision.gif';
 import Prototyping from '@/assets/images/Prototyping.gif';
-import AbtVideo from '@/assets/video/aboutusvideo.mp4'
+// import AbtVideo from '@/assets/video/aboutusvideo.mp4'
 import RnD from '@/assets/images/RnD.gif';
 import SecondaryOperations from '@/assets/images/SecondaryOperations.gif';
 import OurWork from './components/OurWork';
