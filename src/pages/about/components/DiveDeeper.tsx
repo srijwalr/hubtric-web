@@ -14,7 +14,7 @@ const data = [
     href: routes.contactUs(),
   },
   {
-    title: 'Try the software',
+    title: 'Get Quote',
     icon: <AppWindow strokeWidth={0.5} className='w-20 h-20' />,
     href: routes.contactUs(),
   },
