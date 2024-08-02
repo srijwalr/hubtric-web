@@ -1,6 +1,6 @@
 import './style.css';
 // import VisionDisplay from './components/VisionDisplay';
-// import OurStory from './components/OurStory';
+import OurStory from './components/OurStory';
 import Precision from '@/assets/images/Precision.gif';
 import Prototyping from '@/assets/images/Prototyping.gif';
 // import AbtVideo from '@/assets/video/aboutusvideo.mp4'
@@ -198,7 +198,7 @@ const About = () => {
       </section>
       <br />
 
-      {/* <OurStory /> */}
+      <OurStory />
 
       {/* <section>
         <div className="container py-6 flex flex-col gap-4 items-center">

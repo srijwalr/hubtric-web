@@ -8,6 +8,12 @@ import AutomotiveMc from '../../../assets/images/automotivemc.jpeg'
 import AerospaceMc from '../../../assets/images/aerospacemc.jpeg'
 import MedicalMc from '../../../assets/images/medicalmcn.jpeg'
 import RoboticsMc from '../../../assets/images/roboticsmc.jpeg'
+import ElectronicsImg from '../../../assets/images/ElectronicsImg.jpeg'
+import DefenceImg from '../../../assets/images/DefencImg.jpeg'
+import FMCGImg from '../../../assets/images/FMCGImg.jpeg'
+import FertImg from '../../../assets/images/FertImg.jpeg'
+import RailwayImg from '../../../assets/images/RailwayImg.jpeg'
+import PetroChemImg from '../../../assets/images/PetroChemImg.jpeg'
 // import ImgRD from '../../../assets/images/R&D.jpg'
 import { Link } from 'react-router-dom';
 import { routes } from '@/lib/constants';
@@ -16,16 +22,20 @@ import ImgCard from '../ImgCard';
 const Industries = () => {
   const items = [
     { label: 'Aerospace Machining', imageUrl: AerospaceMc },
-    { label: 'Medical Machining', imageUrl: MedicalMc },
-    { label: 'Automotive Machining', imageUrl: AutomotiveMc },
+    { label: 'Electronics', imageUrl: ElectronicsImg },
+    { label: 'Automotive Industries', imageUrl: AutomotiveMc },
     { label: 'Robotics', imageUrl: RoboticsMc },
-    // { label: 'SecondaryOperations', imageUrl: '' },
-    // { label: 'Contract Services', imageUrl: '' },
+    { label: 'Pharmaceutical & Healthcare', imageUrl: MedicalMc },
+    { label: 'FMCG Companies', imageUrl: FMCGImg },
+    { label: 'Defence', imageUrl: DefenceImg },
+    { label: 'Railways', imageUrl: RailwayImg },
+    { label: 'Fertilizer Industries', imageUrl: FertImg },
+    { label: 'Petrochemical Industries', imageUrl: PetroChemImg },
   ];
 
   return (
     <div className="container mx-auto py-8 px-0">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-16 w-4/5 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-1 px-16 w-4/5 mx-auto">
         {items.map((item, index) => (
           <Link to={routes.capabilities()} key={index} className='transition-all hover:scale-110 duration-500'>
             <ImgCard {...item} sx={{img: 'capabilitiesItem'}} />
