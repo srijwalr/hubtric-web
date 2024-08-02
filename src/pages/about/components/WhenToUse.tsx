@@ -1,3 +1,5 @@
+import './style.css';
+
 const data = [
   {
     title: 'Rapid Prototyping',
@@ -57,7 +59,7 @@ const WhenToUse = () => {
             className={`p-4 flex flex-col gap-2 w-full ${
               index === 1
                 ? 'bg-primary text-primary-foreground'
-                : 'bg-secondary text-secondary-foreground'
+                : 'bg-secondary text-secondary-foreground' 
             }`}
             key={index}
           >
