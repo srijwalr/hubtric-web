@@ -65,10 +65,10 @@ export const clients = [
     name: 'Bharat Electronics',
     logo: BEL,
   },
-  {
-    name: 'Nuventura',
-    logo: Nuventura,
-  },
+  // {
+  //   name: 'Nuventura',
+  //   logo: Nuventura,
+  // },
   {
     name: 'Radius',
     logo: Radius,

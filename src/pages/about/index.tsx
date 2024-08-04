@@ -151,7 +151,7 @@ const whenToUse = [
 const teamData = [
   {
     name: 'Anoop Raj Rao',
-    designation: 'Co-founder, Germany',
+    designation: 'Co-founder & Strategic Advisor, Germany',
     country: 'Germany',
     imageUrl: ImgFounder, // Replace with actual image URL
     fbUrl: 'https://www.linkedin.com/in/anooprajrao/',
