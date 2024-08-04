@@ -1,6 +1,6 @@
 import BEL from '@/assets/images/clients/BEL.png';
 import HAL from '@/assets/images/clients/HAL.png';
-import Nuventura from '@/assets/images/clients/Nuventura.webp';
+// import Nuventura from '@/assets/images/clients/Nuventura.webp';
 import Radius from '@/assets/images/clients/Radius.jpg';
 import Trident from '@/assets/images/clients/Trident.png';
 import ABT from '@/assets/images/clients/ABT.png';
