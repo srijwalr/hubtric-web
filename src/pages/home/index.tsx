@@ -39,21 +39,21 @@ const Home = () => {
             <div className='flex gap-4 min-w-[220px]'>
               <PackagePlus className='w-12 h-12' />
               <div className='flex flex-col'>
-                <span className='text-4xl font-semibold'><AnimatedCounter end={100} increment={1} timerInterval={15} />+</span>
-                <div className='text-xl font-medium'>Products</div>
+                <span className='text-4xl font-semibold'><AnimatedCounter end={40} increment={1} timerInterval={15} />+</span>
+                <div className='text-xl font-medium'>Employees</div>
               </div>
             </div>
             <div className='flex gap-4 min-w-[220px]'>
               <Users className='w-12 h-12' />
               <div className='flex flex-col'>
-                <span className='text-4xl font-semibold'><AnimatedCounter end={50} increment={1} timerInterval={20} />+</span>
+                <span className='text-4xl font-semibold'><AnimatedCounter end={25} increment={1} timerInterval={20} />+</span>
                 <span className='text-xl font-medium'>Customers</span>
               </div>
             </div>
             <div className='flex gap-4 min-w-[220px]'>
               <PackageCheck className='w-12 h-12' />
               <div className='flex flex-col'>
-                <span className='text-4xl font-semibold'><AnimatedCounter end={10000} />+</span>
+                <span className='text-4xl font-semibold'><AnimatedCounter end={5000} />+</span>
                 <span className='text-xl font-medium'>Delivered</span>
               </div>
             </div>
