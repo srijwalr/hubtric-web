@@ -1,4 +1,4 @@
-import ContactUsImg from '@/assets/images/ContactUs.jpg';
+import ContactUsImg from '@/assets/images/WhatsApp Image 2024-08-06 at 20.47.34.jpeg';
 import { routes } from '@/lib/constants';
 import { Link } from 'react-router-dom';
 
