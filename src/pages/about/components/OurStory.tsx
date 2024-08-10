@@ -2,13 +2,13 @@ import './style.css';
 
 const OurStory = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full bg-white text-secondary-foreground relative">
-      <div className="w-full md:w-1/2 p-4 pb-0 flex items-center justify-start md:justify-center">
-        <h2 className="text-3xl md:text-[40px] 2xl:text-[80px] font-bold mb-2 capitalize md:animate-bounce-in">
+    <div className="flex flex-col w-full bg-white text-secondary-foreground relative">
+      <div className="w-full p-6 pb-4 md:pb-6 flex items-center justify-start md:justify-center">
+        <h2 className="text-3xl md:text-[30px] 2xl:text-[60px] font-bold mb-2 capitalize">
           Our story
         </h2>
       </div>
-      <div className="w-full md:w-1/2 px-6 py-4 text-sm 2xl:text-md leading-relaxed">
+      <div className="w-full p-6 pt-0 md:pb-8 text-sm 2xl:text-md leading-relaxed">
         <p>
           Hubtric Manufacturing Pvt. Ltd., established in 2018, has been at the
           forefront of revolutionizing the manufacturing industry with its
