@@ -11,7 +11,7 @@ const data = [
   {
     title: 'Book a meeting',
     icon: <Codesandbox strokeWidth={0.5} className='w-20 h-20' />,
-    href: routes.contactUs(),
+    href: "https://calendly.com/director-hubtric", // routes.contactUs(),
   },
   {
     title: 'Get Quote',
@@ -28,6 +28,7 @@ const DiveDeeper = () => {
         {data.map((item) => (
           <Link
             to={item.href}
+            target='_blank'
             className='border-white border-2 rounded-sm flex flex-col items-center p-4 gap-6 hover:scale-105 hover:bg-primary transition-all duration-300'
           >
             <div className='p-4'>{item.icon}</div>
@@ -37,9 +38,9 @@ const DiveDeeper = () => {
             </div>
           </Link>
         ))}
-        {/* <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/director-hubtric'});return false;">Discovery Call</a> */}
+        {/* <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/director-hubtric'});return false;">Discovery Call</a> */}
       </div>
     </div>
   );
