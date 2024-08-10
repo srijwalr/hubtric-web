@@ -35,43 +35,45 @@ const data = [
   {
     heading: "The Spark Behind Hubtric",
     content:
-      "Hubtric was founded to revolutionize manufacturing by seamlessly bridging the gap between customer demands and available resources through our international expertise. Driven by a commitment to better governance and environmental responsibility, we focus on reducing CO2 emissions and supporting our customers' sustainability goals.",
+      ["Hubtric was founded to revolutionize manufacturing by seamlessly " +
+      "bridging the gap between customer demands and available resources " +
+      "through our international expertise. Driven by a commitment to better " +
+      "governance and environmental responsibility, we focus on reducing CO2 " +
+      "emissions and supporting our customers' sustainability goals."],
     imageUrl: Overview,
   },
   {
     heading: "Our Purpose and Goals",
     content:
-      "Transform manufacturing with innovative, sustainable solutions. " +
-      "Meet evolving customer demands using advanced technology and " +
-      "international expertise. Commit to strong environmental and " +
+      ["• Transform manufacturing with innovative, sustainable solutions.",
+      "• Meet evolving customer demands using advanced technology and " +
+      "international expertise.", "• Commit to strong environmental and " +
       "governance standards, reducing CO2 emissions and supporting clients' " +
-      "sustainability goals. • Set new benchmarks in quality and efficiency " +
+      "sustainability goals.", "• Set new benchmarks in quality and efficiency " +
       "to lead the industry towards a more responsible and sustainable " +
-      "future.",
+      "future."],
     imageUrl: MissionAndVision,
   },
   {
     heading: "Our driving force",
     content:
-      "Global Insights, Local Excellence - Combining international " +
-      "expertise with the precision of local experts • Sustainability " +
+      ["• Global Insights, Local Excellence - Combining international " +
+      "expertise with the precision of local experts", "• Sustainability " +
       "Leadership - Pioneering a sustainable manufacturing industry and " +
-      "setting the standard • Innovative Expertise - Leveraging " +
+      "setting the standard", "• Innovative Expertise - Leveraging " +
       "international and industry expertise to meet customer demands with " +
-      "innovative solutions • • Inclusive Work Environment - Fostering " +
-      "inclusivity and empowering women in manufacturing",
+      "innovative solutions", "• Inclusive Work Environment - Fostering " +
+      "inclusivity and empowering women in manufacturing"],
     imageUrl: Quality,
   },
   {
     heading: "Global Excellence in Manufacturing",
     content:
-      "Hubtric has empowered over 25+ businesses and innovators across " +
+      ["Hubtric has empowered over 25+ businesses and innovators across " +
       "continents, including Asia and Europe. Delivering more than 5,000 " +
-      "parts, we showcase our commitment to innovation, quality, and About " +
-      "us content Website Content Page 1 Europe. Delivering more than 5,000 " +
       "parts, we showcase our commitment to innovation, quality, and global " +
-      "reach.", // Our comprehensive manufacturing solutions drive " +
-      // "sustainability and excellence, making a profound impact worldwide.",
+      "reach. Our comprehensive manufacturing solutions drive " +
+      "sustainability and excellence, making a profound impact worldwide."],
     imageUrl: GlobalImpact,
   },
 ];
@@ -84,25 +86,33 @@ const VisionSection = ({ items, reverse }: VisionSectionTypes) => {
   return (
     <section className={`grid-cols-1 lg:grid-cols-2 md:grid`}>
       {items.map((vision: any, index: number) => (
-        <div
-          className={`flex flex-col grid-cols-2 md:grid`}
-        >
-          <div className={`col-span-1 order-1 md:${index % 2 === 0 ? 'order-1' : 'order-2'} lg:${reverse ? 'order-2' : 'order-1'}`}>
-          {/* <div className={`col-span-1 ${reverse ? 'md:order-2' : 'order-1'}`}> */}
+        <div className={`flex flex-col grid-cols-2 md:grid`}>
+          <div
+            className={`col-span-1 order-1 md:${
+              index % 2 === 0 ? "order-1" : "order-2"
+            } lg:${reverse ? "order-2" : "order-1"}`}
+          >
+            {/* <div className={`col-span-1 ${reverse ? 'md:order-2' : 'order-1'}`}> */}
             <img
               className="w-full h-60 md:h-full object-cover"
               src={vision.imageUrl}
               alt={vision.heading}
             />
           </div>
-          <div className={`px-6 pt-4 pb-10 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 order-2 md:${index % 2 === 0 ? 'order-2' : 'order-1'} lg:${reverse ? 'order-1' : 'order-2'}`}>
-          {/* <div className={`px-6 pt-4 pb-10 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 ${reverse ? 'md:order-1' : 'order-2'}`}> */}
+          <div
+            className={`px-6 pt-4 pb-10 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 order-2 md:${
+              index % 2 === 0 ? "order-2" : "order-1"
+            } lg:${reverse ? "order-1" : "order-2"}`}
+          >
+            {/* <div className={`px-6 pt-4 pb-10 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 ${reverse ? 'md:order-1' : 'order-2'}`}> */}
             <h3 className="text-lg 2xl:text-2xl font-semibold mb-2 text-primary">
               {vision.heading}
             </h3>
-            <p className="text-sm 2xl:text-md">
-              {vision.content}
-            </p>
+            <div className="flex flex-col gap-2">
+              {vision.content.map((content: string) => (
+                <p className="text-sm 2xl:text-md">{content}</p>
+              ))}
+            </div>
           </div>
         </div>
       ))}

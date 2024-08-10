@@ -9,7 +9,7 @@ const data = [
     href: routes.contactUs(),
   },
   {
-    title: 'Request a demo',
+    title: 'Book a meeting',
     icon: <Codesandbox strokeWidth={0.5} className='w-20 h-20' />,
     href: routes.contactUs(),
   },
@@ -37,6 +37,9 @@ const DiveDeeper = () => {
             </div>
           </Link>
         ))}
+        {/* <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/director-hubtric'});return false;">Discovery Call</a> */}
       </div>
     </div>
   );

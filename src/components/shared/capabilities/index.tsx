@@ -8,12 +8,16 @@ import ImgRD from '../../../assets/images/R&D.jpg'
 import { Link } from 'react-router-dom';
 import { routes } from '@/lib/constants';
 import ImgCard from '../ImgCard';
+import ImgSheetMetalFab from '@/assets/images/SheetMetalFab.jpg';
+import ImgAdditiveMfg from '@/assets/images/AdditiveMfg.jpg';
 
 const Capabilities = () => {
   const items = [
     { label: 'Precision CNC Machining', imageUrl: ImgPrecisionMachining },
     { label: 'Advanced Tooling Solutions', imageUrl: ImgAdvancedTooling },
     { label: 'Injection Molding', imageUrl: ImgInjectionMolding },
+    { label: 'Sheet Metal Fabrication', imageUrl: ImgSheetMetalFab },
+    { label: 'Additive Manufacturing', imageUrl: ImgAdditiveMfg },
     { label: 'Sub Assembly Services', imageUrl: ImgSubAssembly },
     { label: 'Design & Prototyping', imageUrl: ImgDesignPrototyping },
     { label: 'Research & Development', imageUrl: ImgRD },
@@ -23,7 +27,7 @@ const Capabilities = () => {
 
   return (
     <div className="container mx-auto py-8 px-0">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-16 w-4/5 mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-4/5 mx-auto">
         {items.map((item, index) => (
           <Link to={routes.capabilities()} key={index} className='transition-all hover:scale-110 duration-500'>
             <ImgCard {...item} sx={{img: 'capabilitiesItem'}} />

@@ -3,7 +3,7 @@ import { routes } from "@/lib/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   const footerLinks = [
@@ -48,11 +48,15 @@ const Footer = () => {
         { path: "mailto:sales@hubtric.com", value: "sales@hubtric.com" },
       ],
     },
+    {
+      icon: faInstagram,
+      items: [{ path: "https://www.instagram.com/invites/contact/?igsh=1oy5smj9931ka&utm_content=vd2nly0", value: "@hubtric_manufacturing"}]
+    }
   ];
 
   return (
-    <footer className="bg-secondary text-white py-6 px-4">
-      <div className="flex flex-wrap flex-col md:flex-row justify-even text-sm text-secondary-foreground font-medium gap-8">
+    <footer>
+      <div className="flex flex-wrap flex-col md:flex-row bg-secondary justify-even text-sm text-secondary-foreground font-medium gap-8 py-6 px-4">
         <div className="flex-1">
           <img className="w-24" src={Hubtric} alt="" />
         </div>
@@ -87,6 +91,18 @@ const Footer = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="p-4 bg-black text-white text-sm">
+        <p>
+          Copyrights © 2024{" "}
+          <Link
+            className="hover:text-primary transition-colors"
+            to={routes.home()}
+          >
+            Hubtric Manufacturing Pvt. Ltd.
+          </Link>{" "}
+          All rights reserved
+        </p>
       </div>
     </footer>
   );
