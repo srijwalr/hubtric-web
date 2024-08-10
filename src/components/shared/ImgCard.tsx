@@ -16,7 +16,6 @@ interface iProps {
 
 const ImgCard = (props: iProps) => {
   const { imageUrl, label, description, sx, icon } = props;
-  console.log(typeof icon, sx, "imggg");
   return (
     <div className={`max-w-sm rounded overflow-hidden shadow-md h-full ${sx?.bg || 'bg-white text-secondary-foreground'}`}>
       {/* <img

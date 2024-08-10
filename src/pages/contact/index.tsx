@@ -10,7 +10,7 @@ import ContactUsImg from "@/assets/images/ContactUs.jpg";
 const Contact = () => {
   return (
     <section className="container px-4 py-6">
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row gap-8">
         <div className="w-full">
           <img
             src={ContactUsImg}

@@ -1,7 +1,7 @@
-import Overview from "@/assets/images/WhatsApp Image 2024-08-06 at 20.40.09 (5).jpeg";
-import GlobalImpact from "@/assets/images/WhatsApp Image 2024-08-06 at 20.40.09 (4).jpeg";
-import MissionAndVision from "@/assets/images/WhatsApp Image 2024-08-06 at 20.40.09 (3).jpeg";
-import Quality from "@/assets/images/WhatsApp Image 2024-08-06 at 20.40.09 (1).jpeg";
+import Overview from "@/assets/images/Overview.jpg";
+import GlobalImpact from "@/assets/images/GlobalImpact.jpg";
+import MissionAndVision from "@/assets/images/MissionAndVision.jpg";
+import Quality from "@/assets/images/Quality.jpg";
 import "./style.css";
 
 // const data = [
@@ -82,20 +82,22 @@ interface VisionSectionTypes {
 
 const VisionSection = ({ items, reverse }: VisionSectionTypes) => {
   return (
-    <section className={`grid-cols-2 md:grid`}>
-      {items.map((vision: any) => (
+    <section className={`grid-cols-1 lg:grid-cols-2 md:grid`}>
+      {items.map((vision: any, index: number) => (
         <div
           className={`flex flex-col grid-cols-2 md:grid`}
         >
-          <div className={`col-span-1 ${reverse ? 'md:order-2' : 'order-1'}`}>
+          <div className={`col-span-1 order-1 md:${index % 2 === 0 ? 'order-1' : 'order-2'} lg:${reverse ? 'order-2' : 'order-1'}`}>
+          {/* <div className={`col-span-1 ${reverse ? 'md:order-2' : 'order-1'}`}> */}
             <img
               className="w-full h-60 md:h-full object-cover"
               src={vision.imageUrl}
               alt={vision.heading}
             />
           </div>
-          <div className={`px-6 pt-4 pb-10 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 ${reverse ? 'md:order-1' : 'order-2'}`}>
-            <h3 className="text-lg 2xl:text-2xl font-semibold mb-2 text-primary font-semibold">
+          <div className={`px-6 pt-4 pb-10 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 order-2 md:${index % 2 === 0 ? 'order-2' : 'order-1'} lg:${reverse ? 'order-1' : 'order-2'}`}>
+          {/* <div className={`px-6 pt-4 pb-10 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 ${reverse ? 'md:order-1' : 'order-2'}`}> */}
+            <h3 className="text-lg 2xl:text-2xl font-semibold mb-2 text-primary">
               {vision.heading}
             </h3>
             <p className="text-sm 2xl:text-md">

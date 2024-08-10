@@ -15,105 +15,106 @@ import WhenToUse from './components/WhenToUse';
 import DiveDeeper from './components/DiveDeeper';
 import Benefits from './components/Benefits';
 // import Journey from '@/assets/images/Journey.png';
-import MissionAndVision from '@/assets/images/MissionAndVision.jpg';
-import GlobalImpact from '@/assets/images/GlobalImpact.jpg';
-import Overview from '@/assets/images/Overview.jpg';
-import Quality from '@/assets/images/Quality.jpg';
+// import MissionAndVision from '@/assets/images/MissionAndVision.jpg';
+// import GlobalImpact from '@/assets/images/GlobalImpact.jpg';
+// import Overview from '@/assets/images/Overview.jpg';
+// import Quality from '@/assets/images/Quality.jpg';
 // import VisionDisplay from './components/VisionDisplay';
+import VisionDisplay from './components/VisionDisplay';
 
-const AboutOld = () => {
-  return (
-    <div>
-      <section className="container flex flex-col grid-cols-4 md:grid">
-        <div className="col-span-1">
-          <img
-            className="w-full h-60 md:h-full object-cover"
-            src={Overview}
-            alt="Overview"
-          />
-        </div>
-        <div className="py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4">
-          <h3 className="text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary">
-            The Spark Behind Hubtric
-          </h3>
-          <p className=" text-sm 2xl:text-xl leading-loose">
-            Hubtric was founded to revolutionize manufacturing by seamlessly
-            bridging the gap between customer demands and available resources
-            through our international expertise. Driven by a commitment to
-            better governance and environmental responsibility, we focus on
-            reducing CO2 emissions and supporting our customers' sustainability
-            goals.
-          </p>
-        </div>
-        <div className="col-span-1">
-          <img
-            className="w-full h-60 md:h-full object-cover"
-            src={MissionAndVision}
-            alt="Mission And Vision"
-          />
-        </div>
-        <div className="py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4">
-          <h3 className="text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary">
-            Our Purpose and Goals
-          </h3>
-          <p className=" text-sm 2xl:text-xl leading-loose">
-            Transform manufacturing with innovative, sustainable solutions. •
-            Meet evolving customer demands using advanced technology and
-            international expertise. Commit to strong environmental and
-            governance standards, reducing CO2 emissions and supporting clients'
-            sustainability goals. • Set new benchmarks in quality and efficiency
-            to lead the industry towards a more responsible and sustainable
-            future.
-          </p>
-        </div>
-      </section>
-      <section className="container flex flex-col-reverse grid-cols-4 md:grid">
-        <div className="py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4">
-          <h3 className="text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary">
-            Our driving force
-          </h3>
-          <p className=" text-sm 2xl:text-xl leading-loose">
-            Global Insights, Local Excellence - Combining international
-            expertise with the precision of local experts • Sustainability
-            Leadership - Pioneering a sustainable manufacturing industry and
-            setting the standard • Innovative Expertise - Leveraging
-            international and industry expertise to meet customer demands with
-            innovative solutions • • Inclusive Work Environment - Fostering
-            inclusivity and empowering women in manufacturing
-          </p>
-        </div>
-        <div className="col-span-1">
-          <img
-            className="w-full h-60 md:h-full object-cover"
-            src={Quality}
-            alt="Overview"
-          />
-        </div>
-        <div className="py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4">
-          <h3 className="text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary">
-            Global Excellence in Manufacturing
-          </h3>
-          <p className=" text-sm 2xl:text-xl leading-loose">
-            Hubtric has empowered over 25+ businesses and innovators across
-            continents, including Asia and Europe. Delivering more than 5,000
-            parts, we showcase our commitment to innovation, quality, and About
-            us content Website Content Page 1 Europe. Delivering more than 5,000
-            parts, we showcase our commitment to innovation, quality, and global
-            reach. Our comprehensive manufacturing solutions drive
-            sustainability and excellence, making a profound impact worldwide.
-          </p>
-        </div>
-        <div className="col-span-1">
-          <img
-            className="w-full h-60 md:h-full object-cover"
-            src={GlobalImpact}
-            alt="Mission And Vision"
-          />
-        </div>
-      </section>
-    </div>
-  );
-};
+// const AboutOld = () => {
+//   return (
+//     <div>
+//       <section className="container flex flex-col grid-cols-4 md:grid">
+//         <div className="col-span-1">
+//           <img
+//             className="w-full h-60 md:h-full object-cover"
+//             src={Overview}
+//             alt="Overview"
+//           />
+//         </div>
+//         <div className="py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4">
+//           <h3 className="text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary">
+//             The Spark Behind Hubtric
+//           </h3>
+//           <p className=" text-sm 2xl:text-xl leading-loose">
+//             Hubtric was founded to revolutionize manufacturing by seamlessly
+//             bridging the gap between customer demands and available resources
+//             through our international expertise. Driven by a commitment to
+//             better governance and environmental responsibility, we focus on
+//             reducing CO2 emissions and supporting our customers' sustainability
+//             goals.
+//           </p>
+//         </div>
+//         <div className="col-span-1">
+//           <img
+//             className="w-full h-60 md:h-full object-cover"
+//             src={MissionAndVision}
+//             alt="Mission And Vision"
+//           />
+//         </div>
+//         <div className="py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4">
+//           <h3 className="text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary">
+//             Our Purpose and Goals
+//           </h3>
+//           <p className=" text-sm 2xl:text-xl leading-loose">
+//             Transform manufacturing with innovative, sustainable solutions. •
+//             Meet evolving customer demands using advanced technology and
+//             international expertise. Commit to strong environmental and
+//             governance standards, reducing CO2 emissions and supporting clients'
+//             sustainability goals. • Set new benchmarks in quality and efficiency
+//             to lead the industry towards a more responsible and sustainable
+//             future.
+//           </p>
+//         </div>
+//       </section>
+//       <section className="container flex flex-col-reverse grid-cols-4 md:grid">
+//         <div className="py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4">
+//           <h3 className="text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary">
+//             Our driving force
+//           </h3>
+//           <p className=" text-sm 2xl:text-xl leading-loose">
+//             Global Insights, Local Excellence - Combining international
+//             expertise with the precision of local experts • Sustainability
+//             Leadership - Pioneering a sustainable manufacturing industry and
+//             setting the standard • Innovative Expertise - Leveraging
+//             international and industry expertise to meet customer demands with
+//             innovative solutions • • Inclusive Work Environment - Fostering
+//             inclusivity and empowering women in manufacturing
+//           </p>
+//         </div>
+//         <div className="col-span-1">
+//           <img
+//             className="w-full h-60 md:h-full object-cover"
+//             src={Quality}
+//             alt="Overview"
+//           />
+//         </div>
+//         <div className="py-6 col-span-1 flex flex-col items-start justify-center gap-6 w-full p-0 md:p-4">
+//           <h3 className="text-xl md:text-xl lg:text-[30px] text-left font-semibold text-primary">
+//             Global Excellence in Manufacturing
+//           </h3>
+//           <p className=" text-sm 2xl:text-xl leading-loose">
+//             Hubtric has empowered over 25+ businesses and innovators across
+//             continents, including Asia and Europe. Delivering more than 5,000
+//             parts, we showcase our commitment to innovation, quality, and About
+//             us content Website Content Page 1 Europe. Delivering more than 5,000
+//             parts, we showcase our commitment to innovation, quality, and global
+//             reach. Our comprehensive manufacturing solutions drive
+//             sustainability and excellence, making a profound impact worldwide.
+//           </p>
+//         </div>
+//         <div className="col-span-1">
+//           <img
+//             className="w-full h-60 md:h-full object-cover"
+//             src={GlobalImpact}
+//             alt="Mission And Vision"
+//           />
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
 
 const whenToUse = [
   {
@@ -212,8 +213,8 @@ const About = () => {
           <img src={Journey} alt="Journey" className="w-full md:w-3/4" />
         </div>
       </section> */}
-      <AboutOld /> 
-      {/* <VisionDisplay /> */}
+      {/* <AboutOld />  */}
+      <VisionDisplay />
       <OurTeam teamMembers={teamData} />
       <Benefits />
       <WhenToUse />

@@ -1,4 +1,4 @@
-import ContactUsImg from '@/assets/images/WhatsApp Image 2024-08-06 at 20.47.34.jpeg';
+import ContactUsImg from '@/assets/images/DiveDeeper.jpg';
 import { routes } from '@/lib/constants';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +14,7 @@ const ContactUs = () => {
         <img
           src={ContactUsImg}
           alt="People discussing a project"
+          // className='relative z-30 object-contain min-h-[250px] max-h-full max-w-full w-auto h-auto'
             className="relative z-30 w-[900px] lg:w-[650px] h-[250px] lg:h-[290px] 2xl:h-[400px]"
         />
       </div>
