@@ -173,14 +173,14 @@ const teamData = [
 const About = () => {
   return (
     <div className='flex flex-col'>
-      <section className='sm:h-20 md:h-80 xl:h-96 relative'>
+      <section className='sm:h-20 md:h-96 xl:h-[34rem] relative'>
         {/* <div className="video-bg sm:h-40 md:h-80 top-0 md:top-24"> */}
         <video
           autoPlay
           muted
           loop
           playsInline
-          className='video-bg sm:h-40 md:h-80 xl:h-96 object-cover'
+          className='video-bg sm:h-40 md:h-96 xl:h-[46rem] xl:-mt-48 object-cover'
         >
           <source
             src={
@@ -191,7 +191,7 @@ const About = () => {
           Your browser does not support the video tag.
         </video>
         {/* </div> */}
-        <div className='container py-6'>
+        <div className='p-6'>
           <h1 className='text-4xl md:text-5xl lg:text-[60px] text-left font-semibold text-black animate-slide-in'>
             DESIGNING {/* DESIGNING <br />{' '} */}
             <span className='text-primary'>MANUFACTURING</span>
@@ -201,7 +201,6 @@ const About = () => {
           </h1>
         </div>
       </section>
-      <br />
 
       <OurStory />
 
