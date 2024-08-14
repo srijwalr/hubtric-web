@@ -173,14 +173,14 @@ const teamData = [
 const About = () => {
   return (
     <div className='flex flex-col'>
-      <section className='sm:h-20 md:h-96 xl:h-[34rem] relative'>
+      <section className='sm:h-20 md:h-96 xl:h-[30rem] relative'>
         {/* <div className="video-bg sm:h-40 md:h-80 top-0 md:top-24"> */}
         <video
           autoPlay
           muted
           loop
           playsInline
-          className='video-bg sm:h-40 md:h-96 xl:h-[46rem] xl:-mt-48 object-cover'
+          className='video-bg sm:h-40 md:h-96 xl:h-[42rem] xl:-mt-48 object-cover'
         >
           <source
             src={
