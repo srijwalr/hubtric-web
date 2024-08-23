@@ -60,8 +60,8 @@ const Footer = () => {
         <div className="flex-1">
           <img className="w-24" src={Hubtric} alt="" />
         </div>
-        {footerLinks.map((linkSection) => (
-          <div className="w-full md:w-auto flex-1">
+        {footerLinks.map((linkSection, idx) => (
+          <div className="w-full md:w-auto flex-1" key={idx}>
             <h2 className="text-lg font-semibold">{linkSection.heading}</h2>
             <ul className="flex flex-col gap-1 mt-1">
               {linkSection.links.map((link) => (
@@ -76,14 +76,14 @@ const Footer = () => {
         ))}
         <div className="w-full md:w-auto flex-1">
           <h2 className="text-lg font-semibold">Contact Us</h2>
-          {socialLinks.map((link) => (
-            <div className="flex items-start gap-2 mt-1">
+          {socialLinks.map((link, idx) => (
+            <div className="flex items-start gap-2 mt-1" key={idx}>
               <span className="font-bold">
                 <FontAwesomeIcon icon={link.icon} />
               </span>
               <div className="flex flex-col">
-                {link.items.map((contact) => (
-                  <Link to={contact.path} className="hover:text-primary block">
+                {link.items.map((contact, idx) => (
+                  <Link to={contact.path} className="hover:text-primary block" key={idx}>
                     {contact.value}
                   </Link>
                 ))}
