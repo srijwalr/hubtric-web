@@ -1,3 +1,5 @@
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Map from "@/components/shared/map";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,8 +8,61 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import ContactUsImg from "@/assets/images/ContactUs.jpg";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const serviceId = 'service_ed9bylm';
+const templateId = 'template_ynr79sm';
+const publicKey = '1SHNtat8qpNwynMlN';
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const initialForm = {
+    from_name: '',
+    mail: '',
+    phone: '',
+    message: ''
+  }
+  const [formData, setFormData] = useState(initialForm);
+  // const [showError, setShowError] = useState(false);
+
+  const handleChange = (e: any) => {
+    // setShowError(false)
+    const { name, value } = e.target;
+    setFormData((prevState: any) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    /**
+     * Emailjs keys:
+     * Service id: service_ed9bylm
+     * Template id: template_ynr79sm
+     * Public Key: 1SHNtat8qpNwynMlN
+     */
+    emailjs
+      .sendForm(serviceId, templateId, (formRef?.current || ''), publicKey)
+      .then(
+        () => {
+          setFormData(initialForm);
+          toast.success("Submitted successfully", {
+            position: "top-right"
+          });
+        },
+        (error) => {
+          // setShowError(error);
+          console.error(error)
+          toast.error("Something went wrong!", {
+            position: "top-right"
+          });
+        }
+      );
+  };
+
   return (
     <section className="container px-4 py-6">
       <div className="flex flex-col md:flex-row gap-8">
@@ -28,11 +83,16 @@ const Contact = () => {
             </h2>
           </div>
           <div className="flex flex-col md:flex-row gap-6">
-            <form action="" className="w-full flex flex-col gap-3">
-              <Input type="text" id="name" placeholder="Name" />
-              <Input type="email" id="email" placeholder="Email" />
-              <Input type="tel" id="phone" placeholder="Phone" />
-              <Textarea placeholder="How can we help?" />
+            <form
+              className="w-full flex flex-col gap-3"
+              onSubmit={sendEmail}
+              ref={formRef}
+            >
+              <Input type="text" id="name" name="from_name" value={formData.from_name} placeholder="Name" onChange={handleChange} required />
+              <Input type="email" id="email" name="mail" value={formData.mail} placeholder="Email" onChange={handleChange} required />
+              <Input type="tel" id="phone" name="phone" value={formData.phone} placeholder="Phone" onChange={handleChange} required />
+              <Textarea name="message" value={formData.message} placeholder="How can we help?" onChange={handleChange} required />
+              {/* { showError && <p className='text-[red] text-sm 2xl:text-md'>Something went wrong. Please try again later.</p>} */}
               <Button type="submit">Submit</Button>
               <div className="flex items-center gap-6 pb-4">
                 <Link to="mailto:info@hubtric.com" className="text-black">
@@ -59,6 +119,7 @@ const Contact = () => {
       <div className="w-full">
         <Map />
       </div>
+      <ToastContainer />
     </section>
   );
 };
