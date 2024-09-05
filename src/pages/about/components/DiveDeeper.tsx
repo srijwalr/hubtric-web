@@ -25,11 +25,12 @@ const DiveDeeper = () => {
     <div className='bg-black px-4 py-6 text-white flex flex-col gap-8 items-center'>
       <h1 className='text-4xl font-semibold'>Talk to Us</h1>
       <div className='flex gap-6 justify-between flex-col md:flex-row'>
-        {data.map((item) => (
+        {data.map((item, index) => (
           <Link
             to={item.href}
             target='_blank'
             className='border-white border-2 rounded-sm flex flex-col items-center p-4 gap-6 hover:scale-105 hover:bg-primary transition-all duration-300'
+            key={index}
           >
             <div className='p-4'>{item.icon}</div>
             <div className='flex flex-col items-center gap-2'>

@@ -86,7 +86,7 @@ const VisionSection = ({ items, reverse }: VisionSectionTypes) => {
   return (
     <section className={`grid-cols-1 lg:grid-cols-2 md:grid`}>
       {items.map((vision: any, index: number) => (
-        <div className={`flex flex-col grid-cols-2 md:grid`}>
+        <div key={index} className={`flex flex-col grid-cols-2 md:grid`}>
           <div
             className={`col-span-1 order-1 md:${
               index % 2 === 0 ? "order-1" : "order-2"

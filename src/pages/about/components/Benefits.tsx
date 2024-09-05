@@ -48,8 +48,8 @@ const Benefits = () => {
         BENEFITS WITH HUBTRIC
       </h1>
       <div className='flex flex-col items-center gap-6 md:grid grid-cols-2 lg:grid-cols-3 text-secondary-foreground'>
-        {data.map((item) => (
-          <div className='flex flex-col items-center min-h-[256px] lg:min-h-[205px] h-full'>
+        {data.map((item, index) => (
+          <div key={index} className='flex flex-col items-center min-h-[256px] lg:min-h-[205px] h-full'>
             {item.icon}
             <h1 className='text-lg 2xl:text-2xl font-bold py-4'>{item.title}</h1>
             <p className='text-sm 2xl:text-md'>{item.description}</p>
