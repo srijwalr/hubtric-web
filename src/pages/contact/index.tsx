@@ -103,12 +103,12 @@ const Contact = () => {
                     <span>info@hubtric.com</span>
                   </div>
                 </Link>
-                <Link to="tel:+91-7899176414" className="text-black">
+                <Link to="tel:+91-9945678414" className="text-black">
                   <div className="flex flex-row">
                     <span className="font-bold mr-2">
                       <FontAwesomeIcon icon={faPhone} />
                     </span>
-                    <span>+91 7899176414</span>
+                    <span>+91 9945678414</span>
                   </div>
                 </Link>
               </div>
